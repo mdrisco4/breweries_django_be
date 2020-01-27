@@ -1,5 +1,8 @@
 {% extends 'breweries/base.html' %}
 
+{% block content %}
+<h1>Food</h1>
 <a href="{% url 'food_detail' pk=food.pk %}">
     {{ food.item }}
-  </a>
+</a>
+{% endblock %}

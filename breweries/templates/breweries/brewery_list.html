@@ -1,6 +1,9 @@
 {% extends 'breweries/base.html' %}
 
+{% block content %}
+<h1>Breweries</h1>
 <a href="{% url 'brewery_detail' pk=brewery.pk %}">
     {{ brewery.name }}
   </a>
   <h1>scjs</h1>
+  {% endblock %}

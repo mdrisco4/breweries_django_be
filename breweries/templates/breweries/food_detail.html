@@ -1,5 +1,6 @@
 {% extends 'breweries/base.html' %}
 
+{% block content %}
 <h2>{{ food.item }} <a href="">(edit)</a></h2>
 <h4>{{ food.price }}</h4>
 
@@ -12,3 +13,4 @@
     <a href="">{{ food.item }}-{{ food.price }}</a>
   </li>
   {% endfor %}
+  {% endblock %}

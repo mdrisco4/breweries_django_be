@@ -1,0 +1,5 @@
+{% extends 'breweries/base.html' %}
+
+<a href="{% url 'food_detail' pk=food.pk %}">
+    {{ food.item }}
+  </a>

@@ -14,6 +14,7 @@ class Food(models.Model):
     item = models.CharField(max_length=100)
     description = models.CharField(max_length=100)
     price = models.CharField(max_length=20)
+    # brewery = models.Charfield(max_length=50)
     brewery = models.ForeignKey(Brewery, on_delete=models.PROTECT)
 
     def __str__(self):
@@ -27,6 +28,7 @@ class Beer(models.Model):
     flight_price = models.CharField(max_length=10)
     glassware = models.CharField(max_length=20)
     description = models.TextField(max_length=255)
+    # brewery = models.CharField(max_length=50)
     brewery = models.ForeignKey(Brewery, on_delete=models.PROTECT)
 
     def __str__(self):

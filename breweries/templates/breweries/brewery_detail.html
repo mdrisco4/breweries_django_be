@@ -1,0 +1,14 @@
+{% extends 'breweries/base.html' %}
+
+<h2>{{ brewery.name }} <a href="">(edit)</a></h2>
+<h4>{{ brewery.address }}</h4>
+
+<img src="{{ brewery.logo_url }}" alt="" class="brewery-logo" />
+
+<h3>Beers <a href="">(+)</a></h3>
+<ul>
+  <!-- {% for beer in brewery.songs.all %} -->
+  <li>
+    <!-- <a href="">{{ song.title }}-{{ song.album }}</a> -->
+  </li>
+  {% endfor %}

@@ -5,6 +5,9 @@
 {% for brewery in breweries %}
 <div class="brewery">
 <h2><a href="/breweries/{{brewery.id}}">{{ brewery.name }}</a></h2>
+<h3>{{brewery.address}}</h3>
+<h3>Phone: {{brewery.phone}}</h3>
+<h3>Hours: {{brewery.hours}}</h3>
 <img src="{{brewery.logo_url}}" alt="{{brewery.name}} logo">
   <h1>stuff</h1>
   {% endfor %}

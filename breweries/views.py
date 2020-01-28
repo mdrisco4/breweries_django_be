@@ -1,12 +1,24 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.views import View
+from rest_framework import permissions
 
 from .models import Brewery, Food, Beer
-# from rest_framework import generics
-# from .serializers import BrewerySerializer
+from rest_framework import generics
+from .serializers import BrewerySerializer
 # from .serializers import FoodSerializer
 # from .serializers import BeerSerializer
+
+class BreweryList(generics.ListCreateAPIView):
+    queryset = Brewery.objects.all()
+    serializer_class = BrewerySerializer
+    permission_classes = (permissions.IsAuthenticated,)
+
+
+class BreweryDetail(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Brewery.objects.all()
+    serializer_class = BrewerySerializer
+    permission_classes = (permissions.IsAuthenticated,)
 
 def brewery_list(request):
     breweries = Brewery.objects.all()

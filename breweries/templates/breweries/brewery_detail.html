@@ -1,16 +1,17 @@
 {% extends 'breweries/base.html' %}
 
 {% block content %}
-<h2>{{ brewery.name }} <a href="">(edit)</a></h2>
-<h4>{{ brewery.address }}</h4>
+<h1>{{ brewery.name }} <a href="/breweries/{{brewery.id}}/edit">(edit)</a></h1>
+<h3 class="address">{{ brewery.address }}</h3>
+<h3 class="city-zip">{{ brewery.city }}, {{brewery.zipcode}}</h3>
 
 <img src="{{brewery.logo_url}}" alt="{{brewery.name}} logo">
 
 <h2>Beers on Tap</h2>
 
 {% for beer in brewery.beers.all %}
-    <h2>{{beer.name}}</h2>
-    <h4>{{beer.description}}</h4>
+    <h2><a href="/beers/{{beer.id}}">{{ beer.name }}</a></h2>
+    <h4 class="description">{{beer.description}}</h4>
     <p>ABV: {{beer.abv}}%</p>
     <p>IBUs: {{beer.ibus}}</p>
     <p>{{beer.glassware}} ${{beer.full_price}}</p>
@@ -28,7 +29,12 @@
     </footer>
     {% endfor %}
 <h2>Menu</h2>
-    
+{% for food in brewery.food.all %}
+    <h3>{{food.item}}</h3>
+    <h5>${{food.price}}</h5>
+    <h5 class="description">{{food.description}}</h5>
+    <h5 class="description">{{food.options}}</h5>
+    {% endfor %}
     <h3>Beers <a href="">(+)</a></h3>
     
     <a href="/breweries/{{brewery.id}}/edit"> Edit {{brewery.name}} </a>

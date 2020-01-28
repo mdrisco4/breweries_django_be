@@ -1,14 +1,14 @@
 {% extends 'breweries/base.html' %}
 
 {% block content %}
-<h2>{{ food.item }} <a href="">(edit)</a></h2>
-<h4>{{ food.price }}</h4>
+<!-- <h2>{{ beer.name }} <a href="">(edit)</a></h2>
+<h4>{{ beer.full_price }}</h4> -->
 
-<!-- <img src="{{ .photo_url }}" alt="" class="artist-photo" /> -->
+<!-- <img src="{{ artist.photo_url }}" alt="" class="artist-photo" /> -->
 
 <h3>Food <a href="">(+)</a></h3>
 <ul>
-  {% for item in food.items.all %}
+  {% for food in foods %}
   <li>
     <a href="">{{ food.item }}-{{ food.price }}</a>
   </li>

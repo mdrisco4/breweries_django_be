@@ -3,6 +3,26 @@
   flex-direction: row;
 }
 
+.perma-links {
+  margin: 0 12px 0 12px;
+}
+
+.hours {
+  margin: 0;
+}
+
+.description {
+  border: 2px solid black;
+  margin: 0;
+}
+
+.local-options {
+  border: 1px solid black;
+}
+
+.address {
+  /* text-decoration: underline; */
+}
 
 /* body {
     font-family: "Helvetica Neue", sans-serif;

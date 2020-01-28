@@ -1,13 +1,19 @@
+{% load static %}
+
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
     <title>Breweries</title>
   </head>
   <body>
     <h1>ROC Craft Beer Community</h1>
     <nav class='top-nav-bar'>
-      <h3><a href="/breweries">Breweries</a></h3>
-      <h3><a href="/beers">Beers</a></h3>
-      <h3><a href="/food">Food</a></h3>
+      <h3 class="perma-links"><a href="/breweries">Breweries</a></h3 class="perma-links">
+      <h3 class="perma-links"><a href="/beers">Beers</a></h3>
+      <h3 class="perma-links"><a href="/food">Food</a></h3>
     </nav>
     {% block content %}
     {% endblock %}

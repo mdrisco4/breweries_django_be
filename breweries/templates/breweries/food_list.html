@@ -2,7 +2,12 @@
 
 {% block content %}
 <h1>Food</h1>
-<a href="/food/{{food.id}}">
-    {{ food.item }}
+{% for food in food %}
+<p>{{food.brewery}}</p>
+  <li>
+    <a href="/food/{{beer.id}}">{{ food.item }}-{{ food.price }}</a>
+  </li>
+  <a href="/food/{{beer.id}}">
+  {% endfor %}
 </a>
 {% endblock %}

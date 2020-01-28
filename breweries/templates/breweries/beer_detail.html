@@ -1,16 +1,12 @@
 {% extends 'breweries/base.html' %}
 
 {% block content %}
-<!-- <h2>{{ beer.name }} <a href="">(edit)</a></h2>
-<h4>{{ beer.full_price }}</h4> -->
 
-<!-- <img src="{{ artist.photo_url }}" alt="" class="artist-photo" /> -->
+
+    <h4><a href="/breweries/{{beer.brewery.id}}">{{ beer.brewery }}</a></h4>
+    <h4>{{ beer.name }} - ${{ beer.full_price }}</h4>
+    <h4>ABV: {{ beer.abv }}  IBUs: {{ beer.ibus }}</h4>
+    <h4>{{ beer.description }}</h4>
 
 <h3>Beers <a href="">(+)</a></h3>
-<ul>
-  {% for beer in beers %}
-  <li>
-    <a href="">{{ beer.name }}-{{ beer.price }}</a>
-  </li>
-  {% endfor %}
   {% endblock %}

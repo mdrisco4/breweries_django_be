@@ -23,7 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # path('', include('breweries.urls')),
     path('', include('accounts.urls')),
-    # path('', views.brewery_list),
+    path('', views.brewery_list),
     path('breweries/', views.brewery_list, name='brewery_list'),
     path('breweries/<int:pk>', views.brewery_detail, name='brewery_detail'),
     path('food/', views.food_list, name='food_list'),

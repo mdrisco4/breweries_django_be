@@ -1,4 +1,10 @@
-body {
+.top-nav-bar {
+  display: flex;
+  flex-direction: row;
+}
+
+
+/* body {
     font-family: "Helvetica Neue", sans-serif;
     max-width: 50em;
     margin: auto;
@@ -113,4 +119,4 @@ body {
       </nav>
       {% block content %} {% endblock %}
     </body>
-  </html>
+  </html> */

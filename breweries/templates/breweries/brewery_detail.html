@@ -4,13 +4,34 @@
 <h2>{{ brewery.name }} <a href="">(edit)</a></h2>
 <h4>{{ brewery.address }}</h4>
 
-<img src="{{ brewery.logo_url }}" alt="" class="brewery-logo" />
+<img src="{{brewery.logo_url}}" alt="{{brewery.name}} logo">
 
-<h3>Beers <a href="">(+)</a></h3>
-<ul>
-  <!-- {% for beer in brewery.songs.all %} -->
-  <li>
-    <!-- <a href="">{{ song.title }}-{{ song.album }}</a> -->
-  </li>
-  <!-- {% endfor %} -->
-  {% endblock %}
+<h2>Beers on Tap</h2>
+
+{% for beer in brewery.beers.all %}
+    <h2>{{beer.name}}</h2>
+    <h4>{{beer.description}}</h4>
+    <p>ABV: {{beer.abv}}%</p>
+    <p>IBUs: {{beer.ibus}}</p>
+    <p>{{beer.glassware}} ${{beer.full_price}}</p>
+    <p>Flight Glass: {{beer.flight_price}}</p>
+    <!-- <form action="/beers/{{beer.id}}/delete" method="POST"> -->
+      {% csrf_token %}
+      <input type="submit" value="Delete {{beer.name}}">
+    </form>
+    <a href="/beers/{{beer.id}}/edit"> Edit {{beer.name}} </a>
+
+    <footer>
+        <form action="/breweries/{{brewery.id}}/delete">
+            {% csrf_token %}
+        </form>
+    </footer>
+    {% endfor %}
+<h2>Menu</h2>
+    
+    <h3>Beers <a href="">(+)</a></h3>
+    
+    <a href="/breweries/{{brewery.id}}/edit"> Edit {{brewery.name}} </a>
+    <input type="submit" value="Delete {{brewery.name}}">
+  
+    {% endblock %}

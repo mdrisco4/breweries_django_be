@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.postgres.fields import ArrayField
 
 class Brewery(models.Model):
     name = models.CharField(max_length=100)
@@ -13,6 +14,7 @@ class Brewery(models.Model):
     friday_hours = models.CharField(max_length=20)
     saturday_hours = models.CharField(max_length=20)
     sunday_hours = models.CharField(max_length=20)
+    # beer = ArrayField(models.CharField(max_length=100), blank=True)
     logo_url = models.TextField()
 
     def __str__(self):

@@ -1,21 +1,21 @@
-{% extends 'breweries/base.html' %}
-
-{% block content %}
+{% extends 'breweries/base.html' %} {% block content %}
 <h1>Breweries</h1>
 {% for brewery in breweries %}
 <div class="brewery">
-<h2><a href="/breweries/{{brewery.id}}">{{ brewery.name }}</a></h2>
-<img src="{{brewery.logo_url}}" alt="{{brewery.name}} logo">
-<h3>{{brewery.address}}</h3>
-<h3 class="city-zip">{{ brewery.city }}, {{brewery.zipcode}}</h3>
-<h3>Phone: {{brewery.phone}}</h3>
-<h3>Hours:</h3>
-<p class="hours">Monday: {{brewery.monday_hours}}</p>
-<p class="hours">Tuesday: {{brewery.tuesday_hours}}</p>
-<p class="hours">Wednesday: {{brewery.wednesday_hours}}</p>
-<p class="hours">Thursday: {{brewery.thursday_hours}}</p>
-<p class="hours">Friday: {{brewery.friday_hours}}</p>
-<p class="hours">Saturday: {{brewery.saturday_hours}}</p>
-<p class="hours">Sunday: {{brewery.sunday_hours}}</p>
-  {% endfor %}
-{% endblock %}
+  <h2><a href="/breweries/{{brewery.id}}">{{ brewery.name }}</a></h2>
+  <!-- <img src="https://imgur.com/a/Csv0UFm" alt="{{brewery.name}} logo" />
+  <img src="https://imgur.com/CwAsxyc" alt="{{brewery.name}} logo" /> -->
+  <img src="{{brewery.logo_url}}" alt="{{brewery.name}} logo" />
+  <h3>{{brewery.address}}</h3>
+  <h3 class="city-zip">{{ brewery.city }}, {{brewery.zipcode}}</h3>
+  <h3>Phone: {{brewery.phone}}</h3>
+  <h3>Hours:</h3>
+  <p class="hours">Monday: {{brewery.monday_hours}}</p>
+  <p class="hours">Tuesday: {{brewery.tuesday_hours}}</p>
+  <p class="hours">Wednesday: {{brewery.wednesday_hours}}</p>
+  <p class="hours">Thursday: {{brewery.thursday_hours}}</p>
+  <p class="hours">Friday: {{brewery.friday_hours}}</p>
+  <p class="hours">Saturday: {{brewery.saturday_hours}}</p>
+  <p class="hours">Sunday: {{brewery.sunday_hours}}</p>
+  {% endfor %} {% endblock %}
+</div>

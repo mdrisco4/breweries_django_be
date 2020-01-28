@@ -1,16 +1,11 @@
 {% extends 'breweries/base.html' %}
 
 {% block content %}
-<!-- <h2>{{ beer.name }} <a href="">(edit)</a></h2>
-<h4>{{ beer.full_price }}</h4> -->
 
-<!-- <img src="{{ artist.photo_url }}" alt="" class="artist-photo" /> -->
+
+    <h4><a href="/breweries/{{food.brewery.id}}">{{ food.brewery }}</a></h4>
+    <h4>{{ food.item }} - ${{ food.price }}</h4>
+    <h4>{{ food.description }}</h4>
 
 <h3>Food <a href="">(+)</a></h3>
-<ul>
-  {% for food in foods %}
-  <li>
-    <a href="">{{ food.item }}-{{ food.price }}</a>
-  </li>
-  {% endfor %}
   {% endblock %}

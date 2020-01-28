@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "b04c44c86eca3e486ef2ab4a9a08c9c2c1531422cfe0123e55023fb1b157effc"
+            "sha256": "5531f7d3fe56cc3fb8e1abe7baa19600f05db8dc4057e396b49a16c8c0428d5f"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -30,6 +30,22 @@
             ],
             "index": "pypi",
             "version": "==3.0.2"
+        },
+        "djangorestframework": {
+            "hashes": [
+                "sha256:05809fc66e1c997fd9a32ea5730d9f4ba28b109b9da71fccfa5ff241201fd0a4",
+                "sha256:e782087823c47a26826ee5b6fa0c542968219263fb3976ec3c31edab23a4001f"
+            ],
+            "index": "pypi",
+            "version": "==3.11.0"
+        },
+        "djangorestframework-simplejwt": {
+            "hashes": [
+                "sha256:288ee78618d906f26abf6282b639b8f1806ce1d9a7578897a125cf79c609f259",
+                "sha256:c315be70aa12a5f5790c0ab9acd426c3a58eebea65a77d0893248c5144a5080c"
+            ],
+            "index": "pypi",
+            "version": "==4.4.0"
         },
         "psycopg2-binary": {
             "hashes": [
@@ -68,6 +84,13 @@
             ],
             "index": "pypi",
             "version": "==2.8.4"
+        },
+        "pyjwt": {
+            "hashes": [
+                "sha256:5c6eca3c2940464d106b99ba83b00c6add741c9becaec087fb7ccdefea71350e",
+                "sha256:8d59a976fb773f3e6a39c85636357c4f0e242707394cadadd9814f5cbaa20e96"
+            ],
+            "version": "==1.7.1"
         },
         "pytz": {
             "hashes": [

@@ -2,7 +2,7 @@
 
 {% block content %}
 <h1>Food</h1>
-<a href="{% url 'food_detail' pk=food.pk %}">
+<a href="/food/{{food.id}}">
     {{ food.item }}
 </a>
 {% endblock %}

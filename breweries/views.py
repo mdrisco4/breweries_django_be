@@ -1,11 +1,12 @@
 from django.shortcuts import render, redirect
-# from rest_framework import generics
-# from .serializers import BrewerySerializer
 from django.http import HttpResponse
 from django.views import View
+
+from .models import Brewery, Food, Beer
+# from rest_framework import generics
+# from .serializers import BrewerySerializer
 # from .serializers import FoodSerializer
 # from .serializers import BeerSerializer
-from .models import Brewery, Food, Beer
 
 def brewery_list(request):
     breweries = Brewery.objects.all()

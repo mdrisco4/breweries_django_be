@@ -2,8 +2,10 @@
 
 {% block content %}
 <h1>Breweries</h1>
-<a href="{% url 'brewery_detail' pk=brewery.pk %}">
-    {{ brewery.name }}
-  </a>
-  <h1>scjs</h1>
-  {% endblock %}
+{% for brewery in breweries %}
+<div class="brewery">
+<h2><a href="/breweries/{{brewery.id}}">{{ brewery.name }}</a></h2>
+<img src="{{brewery.logo_url}}" alt="{{brewery.name}} logo">
+  <h1>stuff</h1>
+  {% endfor %}
+{% endblock %}

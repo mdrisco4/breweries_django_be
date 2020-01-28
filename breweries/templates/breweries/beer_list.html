@@ -2,7 +2,8 @@
 
 {% block content %}
 <h1>Beer</h1>
-<a href="{% url 'beer_detail' pk=beer.pk %}">
+<!-- {% for  %} -->
+<a href="/beers/{{beer.id}}">
     {{ beer.name }}
 </a>
 {% endblock %}

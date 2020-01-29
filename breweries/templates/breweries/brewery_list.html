@@ -1,7 +1,7 @@
 {% extends 'breweries/base.html' %} 
 
 {% block content %}
-<h1>Breweries</h1>
+<h1 class="brewery-page">Breweries</h1>
 {% for brewery in breweries %}
 <div class="brewery">
   <h2><a href="/breweries/{{brewery.id}}">{{ brewery.name }}</a></h2>

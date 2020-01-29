@@ -3,6 +3,18 @@
 
 body {
   margin: 0;
+  background-image: url("https://images.unsplash.com/photo-1559818454-1b46997bfe30?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60") 800px 200px no-repeat;
+  
+  /* background:url("https://images.unsplash.com/photo-1559818454-1b46997bfe30?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60") center top no-repeat, url("https://images.unsplash.com/photo-1551837818-f52fc6991b70?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60")
+  left center no-repeat, url("https://images.unsplash.com/photo-1536584979139-dde0784c7c75?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60") right bottom no-repeat; */
+  
+  /* background-image:url(img1.gif), url(img2.png), url(img3.gif);
+	background-position:center top, right top, center bottom;
+	background-repeat:no-repeat, repeat-x, repeat-y; */
+  background-repeat: no-repeat;
+  background-size: initial;
+  background-color: rgb(22, 28, 218);
+  color: white;
   /* background-color: red; */
 }
 
@@ -10,10 +22,27 @@ body {
   color: white;
 }
 
+a {
+  color: lime;
+}
+
+.brewery-page {
+  margin-left: 100px;
+  margin-left: 44%;
+}
+
+.brewery {
+  /* margin-left: 150px; */
+  text-align: center;
+}
+
 .header-items {
   height: 300px;
   max-width: 100%;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ495r21qksGPgN0ZvOwCxEfOTAjH7M_wwDiVBEiZOROi6PSsJR&s");
+  /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ495r21qksGPgN0ZvOwCxEfOTAjH7M_wwDiVBEiZOROi6PSsJR&s"); */
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ495r21qksGPgN0ZvOwCxEfOTAjH7M_wwDiVBEiZOROi6PSsJR&s");
+  background-repeat: no-repeat;
+  background-size: cover;
   border: 2px solid darkcyan;
   text-align: center;
   border: 2px solid red;
@@ -24,7 +53,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: greenyellow;
+  background-color: black;
   /* margin-top: 40px; */
 }
 

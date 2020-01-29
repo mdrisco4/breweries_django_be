@@ -2,8 +2,8 @@
 
 {% block content %}
 
-
     <h4><a href="/breweries/{{food.brewery.id}}">{{ food.brewery }}</a></h4>
+    <img src="{{food.brewery.logo_url}}" alt="{{brewery.name}} logo" />
     <h4>{{ food.item }} - ${{ food.price }}</h4>
     <h4>{{ food.description }}</h4>
 

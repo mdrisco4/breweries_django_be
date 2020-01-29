@@ -2,8 +2,8 @@
 
 {% block content %}
 
-
     <h4><a href="/breweries/{{beer.brewery.id}}">{{ beer.brewery }}</a></h4>
+    <img src="{{beer.brewery.logo_url}}" alt="{{brewery.name}} logo" />
     <h4>{{ beer.name }} - ${{ beer.full_price }}</h4>
     <h4>ABV: {{ beer.abv }}  IBUs: {{ beer.ibus }}</h4>
     <h4>{{ beer.description }}</h4>

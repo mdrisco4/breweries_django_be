@@ -1,18 +1,36 @@
+/* header {
+} */
+
+body {
+  margin: 0;
+  /* background-color: red; */
+}
+
+.title {
+  color: white;
+}
+
 .header-items {
+  height: 300px;
+  max-width: 100%;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ495r21qksGPgN0ZvOwCxEfOTAjH7M_wwDiVBEiZOROi6PSsJR&s");
+  border: 2px solid darkcyan;
   text-align: center;
-  /* display: flex;
-  flex-direction: row; */
+  border: 2px solid red;
+  /* bottom: 0; */
 }
 
 .top-nav-bar {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  background-color: greenyellow;
   /* margin-top: 40px; */
 }
 
 .perma-links {
   margin: 0 12px 0 12px;
+  color: white;
 }
 
 .hours {

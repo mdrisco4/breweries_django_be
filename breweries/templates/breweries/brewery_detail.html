@@ -1,7 +1,7 @@
 {% extends 'breweries/base.html' %}
 
 {% block content %}
-<h1>{{ brewery.name }} <a href="/breweries/{{brewery.id}}/edit">(edit)</a></h1>
+<h1>{{ brewery.name }}</h1>
 <h3 class="address">{{ brewery.address }}</h3>
 <h3 class="city-zip">{{ brewery.city }}, {{brewery.zipcode}}</h3>
 
@@ -36,9 +36,13 @@
     <h5 class="description">{{food.description}}</h5>
     <h5 class="description">{{food.options}}</h5>
     {% endfor %}
-    <h3>Beers <a href="">(+)</a></h3>
+    <h3><a href="/beers/new">Add A New Beer</a></h3>
+    <h3><a href="/food/new">Add New Food</a></h3>
     
     <a href="/breweries/{{brewery.id}}/edit"> Edit {{brewery.name}} </a>
-    <input type="submit" value="Delete {{brewery.name}}">
+    <form action="/breweries/{{brewery.id}}/delete">
+        {% csrf_token %}
+        <input type="submit" value="Delete {{brewery.name}}">
+      </form>
   
     {% endblock %}

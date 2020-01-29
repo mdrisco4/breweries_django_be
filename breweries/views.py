@@ -6,22 +6,12 @@ from rest_framework import permissions
 from .models import Brewery, Food, Beer
 from rest_framework import generics
 from .serializers import BrewerySerializer
-# from .serializers import FoodSerializer
-# from .serializers import BeerSerializer
+from .serializers import FoodSerializer
+from .serializers import BeerSerializer
 
 from .forms import BreweryForm
 from .forms import FoodForm
 from .forms import BeerForm
-
-class BreweryList(generics.ListCreateAPIView):
-    queryset = Brewery.objects.all()
-    serializer_class = BrewerySerializer
-    permission_classes = (permissions.IsAuthenticated,)
-
-class BreweryDetail(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Brewery.objects.all()
-    serializer_class = BrewerySerializer
-    permission_classes = (permissions.IsAuthenticated,)
 
 def brewery_list(request):
     breweries = Brewery.objects.all()
@@ -56,13 +46,15 @@ def brewery_delete(request, pk):
     Brewery.objects.get(id=pk).delete()
     return redirect('brewery_list')
 
-# class BreweryList(generics.ListCreateAPIView):
-#     queryset = Brewery.objects.all()
-#     serializer_class = BrewerySerializer
+class BreweryList(generics.ListCreateAPIView):
+    queryset = Brewery.objects.all()
+    serializer_class = BrewerySerializer
+    permission_classes = (permissions.IsAuthenticated,)
 
-# class BreweryDetail(generics.RetrieveUpdateDestroyAPIView):
-#     queryset = Brewery.objects.all()
-#     serializer_class = BrewerySerializer
+class BreweryDetail(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Brewery.objects.all()
+    serializer_class = BrewerySerializer
+    permission_classes = (permissions.IsAuthenticated,)
 
 def food_list(request):
     food = Food.objects.all()
@@ -97,13 +89,15 @@ def food_delete(request, pk):
     Food.objects.get(id=pk).delete()
     return redirect('food_list')
 
-# class FoodList(generics.ListCreateAPIView):
-#     queryset = Food.objects.all()
-#     serializer_class = BrewerySerializer
+class FoodList(generics.ListCreateAPIView):
+    queryset = Food.objects.all()
+    serializer_class = BrewerySerializer
+    permission_classes = (permissions.IsAuthenticated,)
 
-# class FoodDetail(generics.RetrieveUpdateDestroyAPIView):
-#     queryset = Food.objects.all()
-#     serializer_class = BrewerySerializer
+class FoodDetail(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Food.objects.all()
+    serializer_class = BrewerySerializer
+    permission_classes = (permissions.IsAuthenticated,)
 
 def beer_list(request):
     beers = Beer.objects.all()
@@ -138,10 +132,12 @@ def beer_delete(request, pk):
     Beer.objects.get(id=pk).delete()
     return redirect('house_list')
     
-# class BeerList(generics.ListCreateAPIView):
-#     queryset = Beer.objects.all()
-#     serializer_class = BrewerySerializer
+class BeerList(generics.ListCreateAPIView):
+    queryset = Beer.objects.all()
+    serializer_class = BrewerySerializer
+    permission_classes = (permissions.IsAuthenticated,)
 
-# class BeerDetail(generics.RetrieveUpdateDestroyAPIView):
-#     queryset = Beer.objects.all()
-#     serializer_class = BrewerySerializer
+class BeerDetail(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Beer.objects.all()
+    serializer_class = BrewerySerializer
+    permission_classes = (permissions.IsAuthenticated,)

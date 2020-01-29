@@ -31,12 +31,12 @@ def brewery_detail(request, pk):
     brewery = Brewery.objects.get(id=pk)
     return render(request, 'breweries/brewery_detail.html', {'brewery': brewery})
 
-def brewery_create(response):
+def brewery_create(request):
     if request.method == 'POST':
         form = BreweryForm(request.POST)
         if form.is_valid:
             brewery = form.save()
-            return redirect('brewery_detail', pk=house.pk)
+            return redirect('brewery_detail', pk=brewery.pk)
     else:
         form = BreweryForm()
         return render(request, 'breweries/brewery_form.html', {'form': form})
@@ -72,7 +72,7 @@ def food_detail(request, pk):
     food = Food.objects.get(id=pk)
     return render(request, 'breweries/food_detail.html', {'food': food})
 
-def food_create(response):
+def food_create(request):
     if request.method == 'POST':
         form = FoodForm(request.POST)
         if form.is_valid:
@@ -113,7 +113,7 @@ def beer_detail(request, pk):
     beer = Beer.objects.get(id=pk)
     return render(request, 'breweries/beer_detail.html', {'beer': beer})
 
-def beer_create(response):
+def beer_create(request):
     if request.method == 'POST':
         form = BeerForm(request.POST)
         if form.is_valid:

@@ -9,6 +9,10 @@ from .serializers import BrewerySerializer
 # from .serializers import FoodSerializer
 # from .serializers import BeerSerializer
 
+from .forms import BreweryForm
+from .forms import FoodForm
+from .forms import BeerForm
+
 class BreweryList(generics.ListCreateAPIView):
     queryset = Brewery.objects.all()
     serializer_class = BrewerySerializer

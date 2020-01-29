@@ -14,8 +14,11 @@ class Brewery(models.Model):
     friday_hours = models.CharField(max_length=20)
     saturday_hours = models.CharField(max_length=20)
     sunday_hours = models.CharField(max_length=20)
-    # beer = ArrayField(models.CharField(max_length=100), blank=True)
+    # drink = models.ManyToManyField(Beer)
     logo_url = models.TextField()
+
+    class Meta:
+        ordering = ['name']
 
     def __str__(self):
         return self.name

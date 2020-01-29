@@ -18,10 +18,10 @@
     <p>{{beer.glassware}} ${{beer.full_price}}</p>
     <p>Flight Glass: {{beer.flight_price}}</p>
     <!-- <form action="/beers/{{beer.id}}/delete" method="POST"> -->
-      {% csrf_token %}
+      <!-- {% csrf_token %}
       <input type="submit" value="Delete {{beer.name}}">
     </form>
-    <a href="/beers/{{beer.id}}/edit"> Edit {{beer.name}} </a>
+    <a href="/beers/{{beer.id}}/edit"> Edit {{beer.name}} </a> -->
 
     <footer>
         <form action="/breweries/{{brewery.id}}/delete">

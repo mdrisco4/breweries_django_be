@@ -82,7 +82,7 @@ def food_edit(request, pk):
             food = form.save()
             return redirect('food_detail', pk = food.pk)
     else:
-        form = FoodForm(instance = house)
+        form = FoodForm(instance = food)
         return render(request, 'breweries/food_form.html', {'form': form})
 
 def food_delete(request, pk):
@@ -120,17 +120,17 @@ def beer_create(request):
 def beer_edit(request, pk):
     beer = Beer.objects.get(pk=pk)
     if request.method == 'POST':
-        form = BeerForm(request.POST, instance = house)
+        form = BeerForm(request.POST, instance = beer)
         if form.is_valid:
             beer = form.save()
             return redirect('beer_detail', pk = beer.pk)
     else:
-        form = BeerForm(instance = house)
+        form = BeerForm(instance = beer)
         return render(request, 'breweries/beer_form.html', {'form': form})
 
 def beer_delete(request, pk):
     Beer.objects.get(id=pk).delete()
-    return redirect('house_list')
+    return redirect('beer_list')
     
 class BeerList(generics.ListCreateAPIView):
     queryset = Beer.objects.all()

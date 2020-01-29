@@ -8,5 +8,9 @@
     <h4>ABV: {{ beer.abv }}  IBUs: {{ beer.ibus }}</h4>
     <h4>{{ beer.description }}</h4>
 
-<!-- <h3>Beers <a href="">(+)</a></h3> -->
+    <a href="/beers/{{beer.id}}/edit"> Edit {{brewery.name}} </a>
+    <form action="/beers/{{beer.id}}/delete">
+        {% csrf_token %}
+        <input type="submit" value="Delete {{beer.name}}">
+      </form>
   {% endblock %}

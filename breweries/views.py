@@ -100,8 +100,11 @@ class FoodDetail(generics.RetrieveUpdateDestroyAPIView):
     permission_classes = (permissions.IsAuthenticated,)
 
 def beer_list(request):
-    beers = Beer.objects.all()
-    return render(request, 'breweries/beer_list.html', {'beers': beers})
+    # beers = Beer.objects.all()
+    # return render(request, 'breweries/beer_list.html', {'beers': beers})
+    breweries = Brewery.objects.all()
+    return render(request, 'breweries/beer_list.html', {'breweries': breweries})
+
 
 def beer_detail(request, pk):
     beer = Beer.objects.get(id=pk)

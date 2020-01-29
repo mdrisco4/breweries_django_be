@@ -3,7 +3,7 @@
 
 body {
   margin: 0;
-  background-image: url("https://images.unsplash.com/photo-1559818454-1b46997bfe30?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60") 800px 200px no-repeat;
+  background: url("https://images.unsplash.com/photo-1559818454-1b46997bfe30?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60") right bottom no-repeat, url("https://images.unsplash.com/photo-1551837818-f52fc6991b70?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60") no-repeat;
   
   /* background:url("https://images.unsplash.com/photo-1559818454-1b46997bfe30?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60") center top no-repeat, url("https://images.unsplash.com/photo-1551837818-f52fc6991b70?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60")
   left center no-repeat, url("https://images.unsplash.com/photo-1536584979139-dde0784c7c75?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60") right bottom no-repeat; */
@@ -33,7 +33,35 @@ a {
 
 .brewery {
   /* margin-left: 150px; */
+  /* background: url("https://images.unsplash.com/photo-1536584979139-dde0784c7c75?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60") no-repeat; */
   text-align: center;
+}
+
+.brewery-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.place-phone {
+  text-align: center;
+  display: inline-block;
+  height: 135px;
+  width: 250px;
+  background-color: darkblue;
+  opacity: 75%;
+  margin-top: 16px;
+  margin-bottom: 10px;
+} 
+
+.operating-hours {
+  text-align: center;
+  display: inline-block;
+  height: 200px;
+  width: 150px;
+  background-color: darkblue;
+  opacity: 75%;
+  /* padding-top: 20px; */
 }
 
 .header-items {

@@ -2,13 +2,11 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.views import View
 from rest_framework import permissions
-
-from .models import Brewery, Food, Beer
 from rest_framework import generics
+from .models import Brewery, Food, Beer
 from .serializers import BrewerySerializer
 from .serializers import FoodSerializer
 from .serializers import BeerSerializer
-
 from .forms import BreweryForm
 from .forms import FoodForm
 from .forms import BeerForm
@@ -57,8 +55,6 @@ class BreweryDetail(generics.RetrieveUpdateDestroyAPIView):
     permission_classes = (permissions.IsAuthenticated,)
 
 def food_list(request):
-    # food = Food.objects.all()
-    # return render(request, 'breweries/food_list.html', {'food': food})
     breweries = Brewery.objects.all()
     return render(request, 'breweries/food_list.html', {'breweries': breweries})
 
@@ -102,8 +98,6 @@ class FoodDetail(generics.RetrieveUpdateDestroyAPIView):
     permission_classes = (permissions.IsAuthenticated,)
 
 def beer_list(request):
-    # beers = Beer.objects.all()
-    # return render(request, 'breweries/beer_list.html', {'beers': beers})
     breweries = Brewery.objects.all()
     return render(request, 'breweries/beer_list.html', {'breweries': breweries})
 

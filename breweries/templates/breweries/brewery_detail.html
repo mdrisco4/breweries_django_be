@@ -31,10 +31,10 @@
     {% endfor %}
 <h2>Menu</h2>
 {% for food in brewery.food.all %}
-    <h2><a href="/food/{{food.id}}">{{ food.item }}</a></h2>
-    <h5>${{food.price}}</h5>
+    <h2><a href="/food/{{food.id}}">{{ food.item }}</a>  ${{food.price}}</h2>
+    <!--<h5>${{food.price}}</h5> -->
     <h5 class="description">{{food.description}}</h5>
-    <h5 class="description">{{food.options}}</h5>
+    <!-- <h5 class="description">{{food.options}}</h5> -->
     {% endfor %}
     <h3><a href="/beers/new">Add A New Beer</a></h3>
     <h3><a href="/food/new">Add New Food</a></h3>

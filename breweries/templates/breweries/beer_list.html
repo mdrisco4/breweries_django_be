@@ -12,17 +12,17 @@
     {% endfor %}
     <h2><a href="/beers/new"> Add A New Beer! </a></h2>
 </a> -->
-
 {% for brewery in breweries %}
+<div class="beer-lists-container">
 <h2 class='beer-lists'>{{ brewery.name }}</h2>
 {% for beer in brewery.beers.all %}
 <div class="local-options">
-    <!-- <h4><a href="">{{ beer.brewery }}</a></h4> -->
-    <p>{{beer.style}}</p>
-    <h5><a href="">{{ beer.name }} - ${{ beer.full_price }}</a></h5>
+    <h3 class="beer-list-link"><a href="/beers/{{beer.id}}">{{ beer.name }} - ${{ beer.full_price }}</a></h3>
+    <p class="beer-list-style">{{beer.style}}</p> 
+    <p class="beer-list-abv">ABV: {{beer.abv}}</p>
   </div>
-  <a href="/beers/{{beer.id}}">
   {% endfor %}
+</div>
 
 {% endfor %} 
 

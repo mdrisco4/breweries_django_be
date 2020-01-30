@@ -17,17 +17,19 @@ body {
 }
 
 a {
-  color: crimson;
+  /* color: crimson; */
 }
 
 .brewery-page {
-  margin-left: 100px;
-  margin-left: 44%;
-  
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-top: 60px;
+  color: darkblue;
+  font-size: 50px;
 }
 
 .brewery {
-  background: url("https://images.unsplash.com/photo-1551837818-f52fc6991b70?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60") no-repeat;
+  background: url("https://images.unsplash.com/photo-1551837818-f52fc6991b70?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60") top center no-repeat;
   /* margin-left: 150px; */
   /* background: url("https://images.unsplash.com/photo-1536584979139-dde0784c7c75?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60") no-repeat; */
   text-align: center;
@@ -64,7 +66,7 @@ a {
 }
 
 .header-items {
-  height: 300px;
+  height: 500px;
   max-width: 100%;
   background: url("https://images.unsplash.com/photo-1566061898322-036a53fcd9ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60");
   background-repeat: no-repeat;
@@ -74,30 +76,124 @@ a {
   border: 2px solid red;
 }
 
+.brewery-list-brewery-name {
+  color: darkblue;
+}
+
+.brewery-list-logo-link {
+  margin-top: 30px;
+  border: 4px solid darkblue;
+  border-radius: 8px;
+}
+
+.brewery-list-beer {
+  color: darkblue;
+  margin-left: 30px;
+}
+
+.brewery-detail-container {
+  margin-top: 80px;
+  margin-left: 100px;
+  background: url("https://images.unsplash.com/photo-1545287072-3c332a7acaf0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60") repeat-y;
+}
+
+.brewery-detail-brewery-container {
+  display: flex;
+}
+
+.brewery-detail-brewery-info-container {
+  margin-top: 24px;
+  margin-left: 25px;
+}
+
+.brewery-detail-brewery-info {
+  color: yellow;
+}
+
+.brewery-detail-beer-list-title {
+  color: yellow;
+  font-size: 40px;
+}
+
+.brewery-detail-beer-name {
+  font-size: 28px;
+  color: crimson;
+  background-color: rgba(255,255,255, 50%);
+}
+
+.brewery-detail-beer-description {
+  width: 70%;
+  border: 2px solid darkblue;
+  border-radius: 8px;
+  padding: 4px;
+  background-color: rgba(255,255,255, 50%);
+}
+
+.brewery-detail-beer-stats-container {
+  border: 2px solid darkblue;
+  border-radius: 6px;
+  width: 15%;
+}
+
+.brewery-detail-beer-stats {
+  /* margin: 0 0 0 50px; */
+  /* width: 15%; */
+  margin: 0;
+  background-color: rgba(255,255,255, 50%);
+}
+
+.brewery-detail-food-list-title {
+  color: black;
+  font-size: 40px;
+}
+
+.brewery-detail-food-item {
+  font-size: 28px;
+  color: crimson;
+  margin-left: 30px;
+  background-color: rgba(255,255,255, 50%);
+}
+
+.brewery-detail-food-price {
+  font-size: 28px;
+  color: yellow;
+}
+
+.brewery-detail-food-description {
+  color: black;
+  width: 70%;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 4px;
+  margin-left: 30px;
+  background-color: rgba(255,255,255, 50%);
+}
+
 .top-nav-bar {
   display: flex;
   flex-direction: row;
   justify-content: center;
   background-color: black;
-  margin-top: 200px;
+  margin-top: 410px;
 }
 
 .perma-links {
-  margin: 0 12px 0 12px;
-  color: white;
+  margin: 0 60px 0 60px;
+  color: aqua;
+  font-size: 36px;
 }
 
 .hours {
   margin: 0;
 }
 
-.description {
+/* .description {
   border: 2px solid black;
   margin: 0;
-}
+} */
 
 .local-options {
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .address {
@@ -105,23 +201,64 @@ a {
 }
 
 .beer-lists-container {
-  background: url("https://images.unsplash.com/photo-1559818454-1b46997bfe30?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60") no-repeat;
+  margin-top: 80px;
+  margin-left: 100px;
+  margin-bottom: 50px;
+  background: url("https://images.unsplash.com/photo-1559818454-1b46997bfe30?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60") repeat-y;
 }
 
-.beer-lists {
+.beer-list-brewery-name {
   width: 300px;
   text-align: center;
-  /* font-size: 20px; */
-}
-
-.beer-list-style {
-  margin: 0;
-}
-
-.beer-list-abv {
-  margin: 0;
+  color: yellow;
+  margin: 20px;
 }
 
 .beer-list-link {
-  margin: 0;
+  margin: 0 0 0 50px;
+  color: yellow;
+}
+
+.beer-list-style {
+  margin: 0 0 0 50px;
+  color: black;
+  background-color: rgba(255,255,255, 50%);
+  width: 15%;
+}
+
+.beer-list-abv {
+  margin: 0 0 0 50px;
+  color: black;
+  background-color: rgba(255,255,255, 50%);
+  width: 15%;
+}
+
+.food-list-container {
+  margin-top: 80px;
+  margin-left: 100px;
+  background: url("https://images.unsplash.com/photo-1549396399-8a3275bc6bf8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60") repeat-y;
+
+}
+
+.food-list-brewery {
+  color: yellow;
+  background-color: rgba(0,0,0, 65%);
+  margin-left: 20px;
+  font-size: 32px;
+}
+
+.food-list-item {
+  color: yellow;
+  background-color: rgba(0,0,0, 65%);
+  margin-left: 40px;
+  font-size: 24px;
+}
+
+.food-list-description {
+  color: black;
+  background-color: rgba(255,255,255, 65%);
+  width: 40%;
+  margin-left: 40px;
+  font-size: 18px;
+  margin-bottom: 20px;
 }

@@ -4,9 +4,9 @@
 <h1 class="brewery-page">Breweries</h1>
 {% for brewery in breweries %}
 <div class="brewery">
-  <h2><a href="/breweries/{{brewery.id}}">{{ brewery.name }}</a></h2>
+  <!-- <h2 class="brewery-list-brewery-name"><a href="/breweries/{{brewery.id}}">{{ brewery.name }}</a></h2> -->
   <div class="logo">
-    <img src="{{brewery.logo_url}}" alt="{{brewery.name}} logo" />
+    <a href="/breweries/{{brewery.id}}"><img src="{{brewery.logo_url}}" alt="{{brewery.name}} logo"  class="brewery-list-logo-link"/></a>
   </div>
   <div class="brewery-info">
   <div class="place-phone">

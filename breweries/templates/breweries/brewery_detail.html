@@ -1,41 +1,38 @@
 {% extends 'breweries/base.html' %}
 
 {% block content %}
-<h1>{{ brewery.name }}</h1>
-<h3 class="address">{{ brewery.address }}</h3>
-<h3 class="city-zip">{{ brewery.city }}, {{brewery.zipcode}}</h3>
+<div class="brewery-detail-container">
 
-<img src="{{brewery.logo_url}}" alt="{{brewery.name}} logo">
+<div class="brewery-detail-brewery-container">
+  <img src="{{brewery.logo_url}}" alt="{{brewery.name}} logo">
+  <div class="brewery-detail-brewery-info-container">
+    <h1 class="brewery-detail-brewery-info">{{ brewery.name }}</h1>
+    <h3 class="brewery-detail-brewery-info">{{ brewery.address }}</h3>
+    <h3 class="brewery-detail-brewery-info">{{ brewery.city }}, {{brewery.zipcode}}</h3>
+  </div>
+</div>
 
-<h2>Beers on Tap</h2>
+<h2 class="brewery-detail-beer-list-title">Beers on Tap</h2>
 
 {% for beer in brewery.beers.all %}
-    <h2><a href="/beers/{{beer.id}}">{{ beer.name }}</a></h2>
-    <p>{{beer.style}}</p>
-    <h4 class="description">{{beer.description}}</h4>
-    <p>ABV: {{beer.abv}}%</p>
-    <p>IBUs: {{beer.ibus}}</p>
-    <p>{{beer.glassware}} ${{beer.full_price}}</p>
-    <p>Flight Glass: {{beer.flight_price}}</p>
-    <!-- <form action="/beers/{{beer.id}}/delete" method="POST"> -->
-      <!-- {% csrf_token %}
-      <input type="submit" value="Delete {{beer.name}}">
-    </form>
-    <a href="/beers/{{beer.id}}/edit"> Edit {{beer.name}} </a> -->
-
-    <footer>
-        <form action="/breweries/{{brewery.id}}/delete">
-            {% csrf_token %}
-        </form>
-    </footer>
+<div class="brewery-list-beer">
+    <h2><a href="/beers/{{beer.id}}" class="brewery-detail-beer-name">{{ beer.name }}</a></h2>
+    <h4 class="brewery-detail-beer-description">{{beer.description}}</h4>
+    <div class="brewery-detail-beer-stats-container">
+      <p class="brewery-detail-beer-stats">Style: {{beer.style}}</p class="brewery-detail-beer-stats">
+      <p class="brewery-detail-beer-stats">ABV: {{beer.abv}}%</p>
+      <p class="brewery-detail-beer-stats">IBUs: {{beer.ibus}}</p>
+      <p class="brewery-detail-beer-stats">{{beer.glassware}}: ${{beer.full_price}}</p>
+      <p class="brewery-detail-beer-stats">Flight Glass: {{beer.flight_price}}</p>
+    </div>
+</div>
     {% endfor %}
-<h2>Menu</h2>
+<h2 class="brewery-detail-food-list-title">Menu</h2>
 {% for food in brewery.food.all %}
-    <h2><a href="/food/{{food.id}}">{{ food.item }}</a>  ${{food.price}}</h2>
-    <!--<h5>${{food.price}}</h5> -->
-    <h5 class="description">{{food.description}}</h5>
-    <!-- <h5 class="description">{{food.options}}</h5> -->
+    <h2 class="brewery-detail-food-price"><a href="/food/{{food.id}}" class="brewery-detail-food-item">{{ food.item }}</a>  ${{food.price}}</h2>
+    <h5 class="brewery-detail-food-description">{{food.description}}</h5>
     {% endfor %}
+  </div>
     <h3><a href="/beers/new">Add A New Beer</a></h3>
     <h3><a href="/food/new">Add New Food</a></h3>
     

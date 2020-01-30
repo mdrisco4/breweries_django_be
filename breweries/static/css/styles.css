@@ -4,7 +4,7 @@ body {
   
   background-repeat: no-repeat;
   background-size: initial;
-  background-color: lightblue;
+  background-color: black;
   color: lightsalmon;
 }
 
@@ -21,10 +21,11 @@ a {
 }
 
 .brewery-page {
-  margin-left: 40%;
-  margin-right: 40%;
+  text-align: center;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
   margin-top: 60px;
-  color: darkblue;
+  color: white;
   font-size: 50px;
 }
 
@@ -236,8 +237,8 @@ a {
 .food-list-container {
   margin-top: 80px;
   margin-left: 100px;
-  background: url("https://images.unsplash.com/photo-1549396399-8a3275bc6bf8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60") repeat-y;
-
+  /* background: url("https://images.unsplash.com/photo-1549396399-8a3275bc6bf8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60") repeat-y; */
+  background: url("https://images.unsplash.com/photo-1533640924469-f04e06f8898d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60") repeat-y;
 }
 
 .food-list-brewery {

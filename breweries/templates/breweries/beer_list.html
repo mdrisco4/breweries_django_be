@@ -14,12 +14,12 @@
 </a> -->
 
 {% for brewery in breweries %}
-<h2>{{ brewery.name }}</h2>
+<h2 class='beer-list'>{{ brewery.name }}</h2>
 {% for beer in brewery.beers.all %}
 <div class="local-options">
     <!-- <h4><a href="">{{ beer.brewery }}</a></h4> -->
-    <a href="">{{ beer.name }} - ${{ beer.full_price }}</a>
     <p>{{beer.style}}</p>
+    <h5><a href="">{{ beer.name }} - ${{ beer.full_price }}</a></h5>
   </div>
   <a href="/beers/{{beer.id}}">
   {% endfor %}

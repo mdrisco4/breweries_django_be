@@ -1,14 +1,20 @@
 {% extends 'breweries/base.html' %}
 
 {% block content %}
-<h1>Food</h1>
-{% for food in food %}
-<div class="food-options">
-    <h4><a href="/breweries/{{food.brewery.id}}">{{ food.brewery }}</a></h4>
-    <a href="/food/{{food.id}}">{{ food.item }} - ${{ food.price }}</a>
+{% for brewery in breweries %}
+<h2>{{ brewery.name }}</h2>
+{% for food in brewery.food.all %}
+<div class="local-options">
+    <!-- <h4><a href="">{{ beer.brewery }}</a></h4> -->
+    <!-- <p>{{beer.style}}</p> -->
+    <h5><a href="">{{ food.item }} - ${{ food.price }}</a></h5>
+    <p>{{food.description}}</p>
   </div>
   <a href="/food/{{food.id}}">
-    {% endfor %}
+  {% endfor %}
+
+{% endfor %} 
+
     <h2><a href="/food/new"> Change Your Menu! </a></h2>
 </a>
 {% endblock %}

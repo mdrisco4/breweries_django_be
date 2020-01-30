@@ -3,7 +3,7 @@
 
 body {
   margin: 0;
-  background: url("https://images.unsplash.com/photo-1559818454-1b46997bfe30?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60") right bottom no-repeat, url("https://images.unsplash.com/photo-1551837818-f52fc6991b70?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60") no-repeat;
+  background: url("https://images.unsplash.com/photo-1551837818-f52fc6991b70?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60") no-repeat;
   
   /* background:url("https://images.unsplash.com/photo-1559818454-1b46997bfe30?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60") center top no-repeat, url("https://images.unsplash.com/photo-1551837818-f52fc6991b70?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60")
   left center no-repeat, url("https://images.unsplash.com/photo-1536584979139-dde0784c7c75?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60") right bottom no-repeat; */
@@ -14,8 +14,12 @@ body {
   background-repeat: no-repeat;
   background-size: initial;
   background-color: rgb(22, 28, 218);
-  color: white;
+  color: black;
   /* background-color: red; */
+}
+
+.beer-list {
+  background: url("https://images.unsplash.com/photo-1559818454-1b46997bfe30?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60") no-repeat;
 }
 
 .title {
@@ -23,7 +27,7 @@ body {
 }
 
 a {
-  color: lime;
+  color: crimson;
 }
 
 .brewery-page {
@@ -87,7 +91,7 @@ a {
 
 .perma-links {
   margin: 0 12px 0 12px;
-  color: white;
+  color: white;s
 }
 
 .hours {

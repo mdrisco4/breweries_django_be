@@ -44,7 +44,7 @@ class Beer(models.Model):
     flight_price = models.CharField(max_length=10)
     glassware = models.CharField(max_length=20)
     description = models.TextField(max_length=255)
-    image = models.TextField(max_length=255)
+    image = models.TextField()
     # brewery = models.CharField(max_length=50)
     brewery = models.ForeignKey(Brewery, on_delete=models.PROTECT, related_name = 'beers')
 

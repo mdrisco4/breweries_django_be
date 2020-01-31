@@ -77,6 +77,24 @@ a {
   border: 2px solid red;
 }
 
+.top-nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: black;
+  margin-top: 410px;
+}
+
+.perma-links {
+  margin: 0 60px 0 60px;
+  color: aqua;
+  font-size: 36px;
+}
+
+.hours {
+  margin: 0;
+}
+
 .brewery-list-brewery-name {
   color: darkblue;
 }
@@ -128,6 +146,7 @@ a {
   border-radius: 8px;
   padding: 4px;
   background-color: rgba(255,255,255, 50%);
+  font-size: 18px;
 }
 
 .brewery-detail-beer-stats-container {
@@ -141,10 +160,11 @@ a {
   /* width: 15%; */
   margin: 0;
   background-color: rgba(255,255,255, 50%);
+  font-size: 18px;
 }
 
 .brewery-detail-food-list-title {
-  color: black;
+  color: yellow;
   font-size: 40px;
 }
 
@@ -168,24 +188,7 @@ a {
   padding: 4px;
   margin-left: 30px;
   background-color: rgba(255,255,255, 50%);
-}
-
-.top-nav-bar {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: black;
-  margin-top: 410px;
-}
-
-.perma-links {
-  margin: 0 60px 0 60px;
-  color: aqua;
-  font-size: 36px;
-}
-
-.hours {
-  margin: 0;
+  font-size: 18px;
 }
 
 /* .description {
@@ -213,11 +216,13 @@ a {
   text-align: center;
   color: yellow;
   margin: 20px;
+  font-size: 36px;
 }
 
 .beer-list-link {
   margin: 0 0 0 50px;
   color: yellow;
+  font-size: 30px;
 }
 
 .beer-list-style {
@@ -225,6 +230,7 @@ a {
   color: black;
   background-color: rgba(255,255,255, 50%);
   width: 15%;
+  font-size: 24px;
 }
 
 .beer-list-abv {
@@ -232,6 +238,56 @@ a {
   color: black;
   background-color: rgba(255,255,255, 50%);
   width: 15%;
+  font-size: 24px;
+}
+
+.beer-detail-brewery {
+  color: red;
+  font-size: 36;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.beer-detail-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.beer-detail-info {
+  width: auto;
+  /* justify-content: center; */
+}
+
+.beer-detail-id {
+ color: yellowgreen;  
+ /* width: 40%; */
+ /* border: 1px solid white; */
+ margin-right: 0;
+ text-align: center;
+ margin-top: 6px;
+ margin-bottom: 6px;
+}
+
+.beer-detail-stats {
+ color: yellowgreen;
+ /* width: 40%; */
+ /* border: 1px solid white; */
+ margin-right: 0;
+ text-align: center;
+ margin-top: 6px;
+ margin-bottom: 6px;
+}
+
+.beer-detail-description {
+ color: yellowgreen;
+ /* width: 40%; */
+ /* border: 1px solid white; */
+ margin-right: 0;
+ text-align: center;
+ margin-top: 6px;
+ margin-bottom: 6px;
 }
 
 .food-list-container {

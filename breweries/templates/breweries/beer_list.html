@@ -14,7 +14,10 @@
 </a> -->
 <div class="beer-lists-container">
 {% for brewery in breweries %}
-<h2><a href="/breweries/{{beer.brewery.id}}" class='beer-list-brewery-name'>{{ brewery.name }}</a></h2>
+<div class="beer-list-logo">
+  <a href="/breweries/{{brewery.id}}"><img src="{{brewery.logo_url}}" alt="{{brewery.name}} logo"  class="beer-list-logo-link"/></a>
+  <h2><a href="/breweries/{{beer.brewery.id}}" class='beer-list-brewery-name'>{{ brewery.name }}</a></h2>
+</div>
 {% for beer in brewery.beers.all %}
 <div class="local-options">
     <h3><a href="/beers/{{beer.id}}" class="beer-list-link">{{ beer.name }} - ${{ beer.full_price }}</a></h3>

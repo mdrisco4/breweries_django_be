@@ -3,7 +3,13 @@
 {% block content %}
 <div class="food-list-container">
 {% for brewery in breweries %}
-<h2><a href="/breweries/{{beer.brewery.id}}" class="food-list-brewery">{{ brewery.name }}</a></h2>
+
+<div class="beer-list-logo">
+  <!-- <h2><a href="/breweries/{{beer.brewery.id}}" class='beer-list-brewery-name'>{{ brewery.name }}</a></h2> -->
+  <a href="/breweries/{{brewery.id}}"><img src="{{brewery.logo_url}}" alt="{{brewery.name}} logo"  class="beer-list-logo-link"/></a>
+  <h2><a href="/breweries/{{beer.brewery.id}}" class="food-list-brewery">{{ brewery.name }}</a></h2>
+</div>
+
 {% for food in brewery.food.all %}
 <div class="food-options">
     <!-- <h4><a href="">{{ beer.brewery }}</a></h4> -->

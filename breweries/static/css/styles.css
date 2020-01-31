@@ -1,7 +1,5 @@
 body {
   margin: 0;
-  /* background: url("https://images.unsplash.com/photo-1551837818-f52fc6991b70?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60") no-repeat; */
-  
   background-repeat: no-repeat;
   background-size: initial;
   background-color: black;
@@ -14,10 +12,6 @@ body {
 
 .title {
   color: white;
-}
-
-a {
-  /* color: crimson; */
 }
 
 .brewery-page {
@@ -46,24 +40,48 @@ a {
   text-align: center;
   display: inline-block;
   height: 135px;
-  width: 250px;
-  background-color: darkblue;
+  width: 270px;
+  color: lightsalmon;
+  background-color: rgba(0, 0, 139, .8);
   opacity: 75%;
   margin-top: 16px;
   margin-bottom: 10px;
 } 
 
+.address {
+  margin: 15px 0 12px 0;
+  font-size: 24px;
+}
+
+.city-zip {
+  margin: 12px 0 12px 0;
+  font-size: 24px;
+}
+
+.phone {
+  margin: 12px 0 12px 0;
+  font-size: 24px;  
+}
+
 .operating-hours {
   text-align: center;
   display: inline-block;
-  height: 200px;
-  width: 150px;
-  background-color: darkblue;
+  height: 270px;
+  width: 180px;
+  color: lightsalmon;
+  background-color: rgba(0, 0, 139, .8);
   opacity: 75%;
+  margin-bottom: 60px;
+}
+
+.hours-title {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 .hours {
   opacity: 100%;
+  font-size: 20px;
 }
 
 .header-items {
@@ -87,12 +105,29 @@ a {
 
 .perma-links {
   margin: 0 60px 0 60px;
-  color: aqua;
+  color: red;
   font-size: 36px;
+  background-color: yellow;
+  border: 4px solid red;
+  border-radius: 6px;
+}
+
+.perma-links:hover {
+  color: yellow;
+  background-color: red;
+  border: 4px solid yellow;
 }
 
 .hours {
   margin: 0;
+}
+
+.local-options {
+  margin-left: 100px;
+}
+
+.address {
+  /* text-decoration: underline; */
 }
 
 .brewery-list-brewery-name {
@@ -103,6 +138,12 @@ a {
   margin-top: 30px;
   border: 4px solid darkblue;
   border-radius: 8px;
+  /* height: 225px; */
+}
+
+.brewery-list-logo-link:hover {
+  border: 8px solid yellow;
+  /* height: 221px; */
 }
 
 .brewery-list-beer {
@@ -138,6 +179,12 @@ a {
   font-size: 28px;
   color: crimson;
   background-color: rgba(255,255,255, 50%);
+  border: 2px solid crimson;
+}
+
+.brewery-detail-beer-name:hover {
+  color: blueviolet;
+  border: 2px solid blueviolet;
 }
 
 .brewery-detail-beer-description {
@@ -173,6 +220,12 @@ a {
   color: crimson;
   margin-left: 30px;
   background-color: rgba(255,255,255, 50%);
+  border: 2px solid crimson;
+}
+
+.brewery-detail-food-item:hover {
+  color: blueviolet;
+  border: 2px solid blueviolet;
 }
 
 .brewery-detail-food-price {
@@ -191,19 +244,6 @@ a {
   font-size: 18px;
 }
 
-/* .description {
-  border: 2px solid black;
-  margin: 0;
-} */
-
-.local-options {
-  margin-left: 100px;
-}
-
-.address {
-  /* text-decoration: underline; */
-}
-
 .beer-lists-container {
   margin-top: 80px;
   margin-left: 100px;
@@ -219,19 +259,32 @@ a {
   font-size: 36px;
 }
 
+.beer-list-brewery-name:hover {
+  color: red;
+}
+
 .beer-list-logo {
   display: flex;
 }
 
 .beer-list-link {
-  /* margin: 0 0 0 50px; */
   color: yellow;
   font-size: 30px;
+}
+
+.beer-list-link:hover {
+  color: red;
 }
 
 .beer-list-logo-link {
   width: 80px;
   height: 80px;
+  background-color: greenyellow;
+}
+
+.beer-list-logo-link:hover {
+  border: 4px solid red;
+  border-radius: 4px;
 }
 
 .beer-list-style {
@@ -251,7 +304,7 @@ a {
 }
 
 .beer-detail-brewery {
-  color: red;
+  color: yellow;
   font-size: 36;
   text-align: center;
   align-items: center;
@@ -262,6 +315,11 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: 100px;
+}
+
+.beer-detail-logo-link:hover {
+  border: 4px solid red;
 }
 
 .beer-detail-info {
@@ -313,12 +371,20 @@ a {
   font-size: 32px;
 }
 
+.food-list-brewery:hover {
+  color: red;
+}
+
 .food-list-item {
   color: yellow;
   background-color: rgba(0,0,0, 65%);
   margin-left: 40px;
   font-size: 24px;
   margin-left: 120px;
+}
+
+.food-list-item:hover {
+  color: red;
 }
 
 .food-list-description {
@@ -331,6 +397,11 @@ a {
   margin-left: 120px;
 }
 
+.food-detail-logo {
+  margin: 50px 0 0 0;
+  display: flex;
+  flex-direction: row;
+}
 
 .food-detail-logo-link {
   margin: 0 0 0 40px;
@@ -338,16 +409,19 @@ a {
   height: 80px;
 }
 
-.food-detail-logo {
-  margin: 50px 0 0 0;
-  display: flex;
-  flex-direction: row;
+.food-detail-logo-link:hover {
+  border: 4px solid red;
 }
 
 .food-detail-brewery-name {
   margin: 0 0 0 40px;
   color: crimson;
 }
+
+.food-detail-brewery-name:hover {
+  color: yellowgreen;
+}
+
 .food-detail-id {
   color: yellow;
   margin-left: 60px;
@@ -363,7 +437,7 @@ a {
   padding: 4px;
 }
         
-        .food-detail-options {
+.food-detail-options {
   color: yellow;
   margin: 10px 0 0 60px;
   font-size: 24px;  

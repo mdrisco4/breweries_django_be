@@ -2,9 +2,9 @@
 
 {% block content %}
 
-    <h4><a href="/breweries/{{beer.brewery.id}}" class="beer-detail-brewery">{{ beer.brewery }}</a></h4>
+    <!-- <h4><a href="/breweries/{{beer.brewery.id}}" class="beer-detail-brewery">{{ beer.brewery }}</a></h4> -->
     <div class="beer-detail-container">
-    <img src="{{beer.brewery.logo_url}}" alt="{{brewery.name}} logo" />
+        <a href="/breweries/{{brewery.id}}"><img src="{{beer.brewery.logo_url}}" alt="{{brewery.name}} logo" class="beer-detail-logo-link"/></a>
         <div class="beer-detail-info">
             <h4 class="beer-detail-id">{{ beer.name }}</h4>
             <h4 class="beer-detail-stats">Style: {{ beer.style }}</h4>

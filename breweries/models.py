@@ -29,6 +29,7 @@ class Food(models.Model):
     description = models.CharField(max_length=100)
     options = models.CharField(max_length=100)
     price = models.CharField(max_length=20)
+    # image = models.TextField()
     # brewery = models.Charfield(max_length=50)
     brewery = models.ForeignKey(Brewery, on_delete=models.PROTECT, related_name = 'food')
 

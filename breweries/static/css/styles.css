@@ -330,3 +330,45 @@ a {
   margin-bottom: 20px;
   margin-left: 120px;
 }
+
+
+.food-detail-logo-link {
+  margin: 0 0 0 40px;
+  width: 80px;
+  height: 80px;
+}
+
+.food-detail-logo {
+  margin: 50px 0 0 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.food-detail-brewery-name {
+  margin: 0 0 0 40px;
+  color: crimson;
+}
+.food-detail-id {
+  color: yellow;
+  margin-left: 60px;
+  font-size: 36px;  
+}
+        
+.food-detail-description {
+  color: yellow;
+  margin: 10px 0 10px 60px;
+  font-size: 30px;
+  border: 2px solid yellowgreen;
+  border-radius: 6px;
+  padding: 4px;
+}
+        
+        .food-detail-options {
+  color: yellow;
+  margin: 10px 0 0 60px;
+  font-size: 24px;  
+  border: 2px solid yellowgreen;
+  border-radius: 6px;
+  width: 40%;
+  padding: 4px;
+}

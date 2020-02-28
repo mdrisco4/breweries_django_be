@@ -11,7 +11,8 @@ body {
 }
 
 .title {
-  color: white;
+  color: black;
+  font-size: 60px;
 }
 
 .brewery-page {
@@ -420,6 +421,7 @@ body {
 
 .food-detail-brewery-name:hover {
   color: yellowgreen;
+  font-size: 24px;
 }
 
 .food-detail-id {
@@ -443,6 +445,6 @@ body {
   font-size: 24px;  
   border: 2px solid yellowgreen;
   border-radius: 6px;
-  width: 40%;
+  width: 60%;
   padding: 4px;
 }

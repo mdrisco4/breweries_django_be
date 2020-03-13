@@ -405,6 +405,7 @@ body {
 .food-detail-brewery-name {
   margin: 0 0 0 40px;
   color: crimson;
+  text-decoration: none;
 }
 
 .food-detail-brewery-name:hover {
@@ -422,7 +423,8 @@ body {
   color: yellow;
   margin: 10px 0 10px 60px;
   font-size: 30px;
-  border: 2px solid yellowgreen;
+  background-color: skyblue;
+  /* border: 2px solid yellowgreen; */
   border-radius: 6px;
   padding: 4px;
 }
@@ -431,7 +433,8 @@ body {
   color: yellow;
   margin: 10px 0 0 60px;
   font-size: 24px;  
-  border: 2px solid yellowgreen;
+  background-color: skyblue;
+  /* border: 2px solid yellowgreen; */
   border-radius: 6px;
   width: 60%;
   padding: 4px;

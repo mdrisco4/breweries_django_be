@@ -314,6 +314,7 @@ body {
   flex-direction: row;
   justify-content: center;
   margin-top: 100px;
+  border: 4px solid yellow;
 }
 
 .beer-detail-logo-link:hover {
@@ -399,6 +400,7 @@ body {
   margin: 0 0 0 40px;
   width: 80px;
   height: 80px;
+  border: 4px solid yellow;
 }
 
 .food-detail-logo-link:hover {

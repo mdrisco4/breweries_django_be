@@ -36,7 +36,7 @@
     <h3><a href="/beers/new">Add A New Beer</a></h3>
     <h3><a href="/food/new">Add New Food</a></h3>
     
-    <a href="/breweries/{{brewery.id}}/edit"> Edit {{brewery.name}} </a>
+    <h3><a href="/breweries/{{brewery.id}}/edit"> Edit {{brewery.name}} </a></h3>
     <form action="/breweries/{{brewery.id}}/delete">
         {% csrf_token %}
         <input type="submit" value="Delete {{brewery.name}}">

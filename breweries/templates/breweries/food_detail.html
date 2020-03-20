@@ -3,7 +3,7 @@
 {% block content %}
 
 <div class="food-detail-logo">
-    <a href="/breweries/{{brewery.id}}"><img src="{{food.brewery.logo_url}}" alt="{{brewery.name}} logo"  class="food-detail-logo-link"/></a>
+    <a href="/breweries/{{food.brewery.id}}"><img src="{{food.brewery.logo_url}}" alt="{{brewery.name}} logo"  class="food-detail-logo-link"/></a>
     <h2><a href="/breweries/{{food.brewery.id}}" class='food-detail-brewery-name'>{{ food.brewery }}</a></h2>
   </div>
 

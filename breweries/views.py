@@ -32,7 +32,7 @@ def brewery_create(request):
 def brewery_edit(request, pk):
     brewery = Brewery.objects.get(pk=pk)
     if request.method == 'POST':
-        form = BreweryForm(request.POST, instance = house)
+        form = BreweryForm(request.POST, instance = brewery)
         if form.is_valid:
             brewery = form.save()
             return redirect('brewery_detail', pk = brewery.pk)

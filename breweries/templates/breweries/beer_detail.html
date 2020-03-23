@@ -1,25 +1,34 @@
-{% extends 'breweries/base.html' %}
+{% extends 'breweries/base.html' %} {% block content %}
 
-{% block content %}
-
-    <!-- <h4><a href="/breweries/{{beer.brewery.id}}" class="beer-detail-brewery">{{ beer.brewery }}</a></h4> -->
-    <div class="beer-detail-container">
-        <a href="/breweries/{{beer.brewery.id}}"><img src="{{beer.brewery.logo_url}}" alt="{{brewery.name}} logo" class="beer-detail-logo-link"/></a>
-        <div class="beer-detail-info">
-            <h4 class="beer-detail-id">{{ beer.name }}</h4>
-            <h4 class="beer-detail-stats">Style: {{ beer.style }}</h4>
-            <h4 class="beer-detail-stats">ABV: {{ beer.abv }}</h4>
-            <h4 class="beer-detail-stats">IBUs: {{ beer.ibus }}</h4>
-            <h4 class="beer-detail-stats">Served in: {{ beer.glassware }}</h4>
-            <h4 class="beer-detail-stats">Full Pour: ${{ beer.full_price }}</h4>
-            <h4 class="beer-detail-stats">Flight: ${{ beer.flight_price }}</h4>
-            <h4 class="beer-detail-description">{{ beer.description }}</h4>
-        </div>
-        <img src="{{beer.image}}" alt="{{beer.name}} logo" />
+<!-- <h4><a href="/breweries/{{beer.brewery.id}}" class="beer-detail-brewery">{{ beer.brewery }}</a></h4> -->
+<div class="beer-detail-container">
+  <div>
+    <h4 class="beer-detail-id">{{ beer.name }}</h4>
+    <h4 class="beer-detail-stats">Style: {{ beer.style }}</h4>
+    <h4 class="beer-detail-stats">ABV: {{ beer.abv }}</h4>
+    <h4 class="beer-detail-stats">IBUs: {{ beer.ibus }}</h4>
+    <h4 class="beer-detail-stats">Served in: {{ beer.glassware }}</h4>
+    <h4 class="beer-detail-stats">Full Pour: ${{ beer.full_price }}</h4>
+    <h4 class="beer-detail-stats">Flight: ${{ beer.flight_price }}</h4>
+    <h4 class="beer-detail-description">Description: <br/>{{ beer.description }}</h4>
+    <div class="beer-detail-images-container">
+        <a href="/breweries/{{beer.brewery.id}}"
+        ><img
+        src="{{beer.brewery.logo_url}}"
+        alt="{{brewery.name}} logo"
+        class="beer-detail-logo-link"
+        /></a>
+        <img
+        src="{{beer.image}}"
+        alt="{{beer.name}} logo"
+        class="beer-detail-beer-logo"
+        />
     </div>
-    <a href="/beers/{{beer.id}}/edit"> Edit {{brewery.name}} </a>
-    <form action="/beers/{{beer.id}}/delete">
-        {% csrf_token %}
-        <input type="submit" value="Delete {{beer.name}}">
-      </form>
-  {% endblock %}
+  </div>
+</div>
+<a href="/beers/{{beer.id}}/edit"> Edit {{brewery.name}} </a>
+<form action="/beers/{{beer.id}}/delete">
+  {% csrf_token %}
+  <input type="submit" value="Delete {{beer.name}}" />
+</form>
+{% endblock %}

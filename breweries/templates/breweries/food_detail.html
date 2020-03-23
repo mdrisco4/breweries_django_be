@@ -13,9 +13,9 @@
     <h4 class="food-detail-description">{{ food.description }}</h4>
     <h4 class="food-detail-options">Options: {{ food.options }}</h4>
 
-    <a href="/food/{{food.id}}/edit" class="food-detail-item"> Edit {{food.item}} </a>
-    <form action="/food/{{food.id}}/delete">
+    <h3 class="food-detail-crud-buttons"><a href="/food/{{food.id}}/edit" class="food-detail-crud-buttons-text"> Edit Item </a></h3>
+    <form class="delete-food" action="/food/{{food.id}}/delete">
         {% csrf_token %}
-        <input type="submit" value="Delete {{food.name}}">
+        <input class="delete-food-button" type="submit" value="Delete {{food.name}}">
       </form>
   {% endblock %}

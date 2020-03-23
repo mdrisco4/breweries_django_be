@@ -11,7 +11,7 @@ body {
 }
 
 .title {
-  color: greenyellow;
+  color: red;
   font-size: 60px;
 }
 
@@ -23,9 +23,12 @@ body {
 }
 
 .brewery {
-  background: url("https://images.unsplash.com/photo-1551837818-f52fc6991b70?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60") top center no-repeat;
-  /* margin-left: 150px; */
-  /* background: url("https://images.unsplash.com/photo-1536584979139-dde0784c7c75?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60") no-repeat; */
+  background: url("https://images.unsplash.com/photo-1551837818-f52fc6991b70?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60")
+    top center no-repeat;
+  background: url("https://images.unsplash.com/photo-1513828646384-e4d8ec30d2bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60")
+    top center no-repeat;
+  background: url("https://images.unsplash.com/photo-1513828646384-e4d8ec30d2bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60")
+    top center no-repeat;
   text-align: center;
 }
 
@@ -41,11 +44,11 @@ body {
   height: 135px;
   width: 270px;
   color: lightsalmon;
-  background-color: rgba(0, 0, 139, .8);
+  background-color: rgba(0, 0, 139, 0.8);
   opacity: 75%;
   margin-top: 16px;
   margin-bottom: 10px;
-} 
+}
 
 .address {
   margin: 15px 0 12px 0;
@@ -59,7 +62,7 @@ body {
 
 .phone {
   margin: 12px 0 12px 0;
-  font-size: 24px;  
+  font-size: 24px;
 }
 
 .operating-hours {
@@ -68,7 +71,7 @@ body {
   height: 270px;
   width: 210px;
   color: lightsalmon;
-  background-color: rgba(0, 0, 139, .8);
+  background-color: rgba(0, 0, 139, 0.8);
   opacity: 75%;
   margin-bottom: 60px;
 }
@@ -84,9 +87,9 @@ body {
 }
 
 .header-items {
-  height: 500px;
-  max-width: 100%;
-  background: url("https://images.unsplash.com/photo-1566061898322-036a53fcd9ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60");
+  width: 100%;
+  height: auto;
+  /* background: url("https://images.unsplash.com/photo-1566061898322-036a53fcd9ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"); */
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -152,12 +155,12 @@ body {
 .brewery-detail-container {
   margin-top: 80px;
   margin-left: 100px;
-  background: url("https://images.unsplash.com/photo-1545287072-3c332a7acaf0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60") repeat-y;
+  background: url("https://images.unsplash.com/photo-1545287072-3c332a7acaf0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60")
+    repeat-y;
 }
 
 .brewery-detail-brewery-container {
   display: flex;
-  margin-top: 160px;
 }
 
 .brewery-detail-brewery-info-container {
@@ -177,7 +180,7 @@ body {
 .brewery-detail-beer-name {
   font-size: 28px;
   color: crimson;
-  background-color: rgba(255,255,255, 50%);
+  background-color: rgba(255, 255, 255, 50%);
   border: 2px solid crimson;
   text-decoration: none;
 }
@@ -192,7 +195,7 @@ body {
   border: 2px solid darkblue;
   border-radius: 8px;
   padding: 4px;
-  background-color: rgba(255,255,255, 50%);
+  background-color: rgba(255, 255, 255, 50%);
   font-size: 18px;
 }
 
@@ -204,7 +207,7 @@ body {
 
 .brewery-detail-beer-stats {
   margin: 0;
-  background-color: rgba(255,255,255, 50%);
+  background-color: rgba(255, 255, 255, 50%);
   font-size: 18px;
 }
 
@@ -217,7 +220,7 @@ body {
   font-size: 28px;
   color: crimson;
   margin-left: 30px;
-  background-color: rgba(255,255,255, 50%);
+  background-color: rgba(255, 255, 255, 50%);
   border: 2px solid crimson;
 }
 
@@ -238,7 +241,7 @@ body {
   border-radius: 8px;
   padding: 4px;
   margin-left: 30px;
-  background-color: rgba(255,255,255, 50%);
+  background-color: rgba(255, 255, 255, 50%);
   font-size: 18px;
 }
 
@@ -259,7 +262,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
-  background: url("https://images.unsplash.com/photo-1559818454-1b46997bfe30?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60") repeat-y;
+  background: url("https://images.unsplash.com/photo-1559818454-1b46997bfe30?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60")
+    center repeat-y;
 }
 
 .beer-list-brewery-name {
@@ -281,6 +285,7 @@ body {
 .beer-list-link {
   color: yellow;
   font-size: 30px;
+  text-decoration: none;
 }
 
 .beer-list-link:hover {
@@ -302,17 +307,31 @@ body {
 .beer-list-style {
   margin: 0 0 0 0;
   color: black;
-  background-color: rgba(255,255,255, 50%);
-  width: 25%;
+  background-color: rgba(255, 255, 255, 50%);
+  width: 240px;
   font-size: 24px;
 }
 
 .beer-list-abv {
   margin: 0 0 0 0;
   color: black;
-  background-color: rgba(255,255,255, 50%);
-  width: 25%;
+  background-color: rgba(255, 255, 255, 50%);
+  width: 240px;
   font-size: 24px;
+}
+
+.beer-detail-all-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.beer-detail-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 60px;
+  background: url("https://images.unsplash.com/photo-1559818454-1b46997bfe30?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60")
+    center repeat-y;
 }
 
 .beer-detail-brewery {
@@ -323,44 +342,48 @@ body {
   justify-content: center;
 }
 
-.beer-detail-container {
+.beer-detail-images-container {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 100px;
-  border: 4px solid yellow;
+  justify-content: space-between;
 }
 
 .beer-detail-logo-link:hover {
   border: 4px solid red;
 }
 
+.beer-detail-beer-logo {
+  height: 225px;
+}
+
 .beer-detail-info {
-  width: auto;
+  width: 35%;
 }
 
 .beer-detail-id {
- color: yellowgreen;  
- margin-right: 0;
- text-align: center;
- margin-top: 6px;
- margin-bottom: 6px;
+  color: yellow;
+  margin-right: 0;
+  text-align: center;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  text-shadow: 2px 2px black;
 }
 
 .beer-detail-stats {
- color: yellowgreen;
- margin-right: 0;
- text-align: center;
- margin-top: 6px;
- margin-bottom: 6px;
+  color: yellow;
+  margin-right: 0;
+  text-align: center;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  text-shadow: 2px 2px black;
 }
 
 .beer-detail-description {
- color: yellowgreen;
- margin-right: 0;
- text-align: center;
- margin-top: 6px;
- margin-bottom: 6px;
+  color: yellow;
+  margin-right: 0;
+  text-align: center;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  text-shadow: 2px 2px black;
 }
 
 .food-list-container {
@@ -368,12 +391,13 @@ body {
   margin-left: auto;
   margin-right: auto;
   /* background: url("https://images.unsplash.com/photo-1549396399-8a3275bc6bf8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60") repeat-y; */
-  background: url("https://images.unsplash.com/photo-1533640924469-f04e06f8898d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60") repeat-y;
+  background: url("https://images.unsplash.com/photo-1533640924469-f04e06f8898d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60")
+    center repeat-y;
 }
 
 .food-list-brewery {
   color: yellow;
-  background-color: rgba(0,0,0, 65%);
+  background-color: rgba(0, 0, 0, 65%);
   margin-left: 20px;
   font-size: 32px;
 }
@@ -384,7 +408,7 @@ body {
 
 .food-list-item {
   color: yellow;
-  background-color: rgba(0,0,0, 65%);
+  background-color: rgba(0, 0, 0, 65%);
   margin-left: 40px;
   font-size: 24px;
   margin-left: 120px;
@@ -397,7 +421,7 @@ body {
 
 .food-list-description {
   color: black;
-  background-color: rgba(255,255,255, 65%);
+  background-color: rgba(255, 255, 255, 65%);
   width: 40%;
   margin-left: 40px;
   font-size: 18px;
@@ -436,26 +460,57 @@ body {
 .food-detail-id {
   color: yellow;
   margin-left: 60px;
-  font-size: 36px;  
+  font-size: 36px;
 }
-        
+
 .food-detail-description {
   color: yellow;
   margin: 10px 0 10px 60px;
   font-size: 30px;
-  background-color: skyblue;
+  /* background-color: skyblue; */
   /* border: 2px solid yellowgreen; */
   border-radius: 6px;
   padding: 4px;
 }
-        
+
 .food-detail-options {
   color: yellow;
   margin: 10px 0 0 60px;
-  font-size: 24px;  
-  background-color: skyblue;
+  font-size: 24px;
+  /* background-color: skyblue; */
   /* border: 2px solid yellowgreen; */
   border-radius: 6px;
   width: 60%;
   padding: 4px;
+}
+
+.food-detail-crud-buttons {
+  color: red;
+  background-color: yellow;
+  border: 4px solid red;
+  width: 200px;
+  height: auto;
+  text-align: center;
+}
+
+.food-detail-crud-buttons:hover {
+  color: yellow;
+  background-color: red;
+  border: 4px solid yellow;
+}
+
+.food-detail-crud-buttons-text {
+  color: red;
+  text-decoration: none;
+}
+
+.delete-food {
+  background-color: white;
+  width: 200px;
+}
+
+.delete-food-button {
+  color: red;
+  background-color: white;
+  width: 200px;
 }

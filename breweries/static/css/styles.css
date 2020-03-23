@@ -157,6 +157,7 @@ body {
 
 .brewery-detail-brewery-container {
   display: flex;
+  margin-top: 160px;
 }
 
 .brewery-detail-brewery-info-container {

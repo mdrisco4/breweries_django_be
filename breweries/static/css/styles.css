@@ -12,14 +12,17 @@ body {
 
 .title {
   color: red;
-  font-size: 60px;
+  text-shadow: 2px 2px black;
+  font-size: 90px;
+  padding-top: 200px;
 }
 
 .brewery-page {
   text-align: center;
-  margin-top: 160px;
-  color: white;
-  font-size: 50px;
+  margin-top: 60px;
+  color: yellow;
+  text-shadow: 4px 4px red;
+  font-size: 80px;
 }
 
 .brewery {
@@ -41,10 +44,11 @@ body {
 .place-phone {
   text-align: center;
   display: inline-block;
-  height: 135px;
-  width: 270px;
-  color: lightsalmon;
-  background-color: rgba(0, 0, 139, 0.8);
+  height: 165px;
+  width: 330px;
+  color: yellow;
+  text-shadow: 2px 2px red;
+  background-color: rgba(0, 0, 0, 0.9);
   opacity: 75%;
   margin-top: 16px;
   margin-bottom: 10px;
@@ -52,55 +56,64 @@ body {
 
 .address {
   margin: 15px 0 12px 0;
-  font-size: 24px;
+  font-size: 30px;
 }
 
 .city-zip {
   margin: 12px 0 12px 0;
-  font-size: 24px;
+  font-size: 30px;
 }
 
 .phone {
   margin: 12px 0 12px 0;
-  font-size: 24px;
+  font-size: 30px;
 }
 
 .operating-hours {
   text-align: center;
   display: inline-block;
   height: 270px;
-  width: 210px;
-  color: lightsalmon;
-  background-color: rgba(0, 0, 139, 0.8);
+  width: 270px;
+  color: yellow;
+  text-shadow: 1px 1px red;
+  background-color: rgba(0, 0, 0, 0.9);
   opacity: 75%;
   margin-bottom: 60px;
 }
 
 .hours-title {
-  font-size: 24px;
+  font-size: 28px;
   margin-bottom: 10px;
 }
 
 .hours {
   opacity: 100%;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .header-items {
-  width: 100%;
   height: auto;
-  /* background: url("https://images.unsplash.com/photo-1566061898322-036a53fcd9ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"); */
+  background: url("https://scontent-iad3-1.xx.fbcdn.net/v/t31.0-8/892485_10200905550149524_1630755182_o.jpg?_nc_cat=100&_nc_sid=05277f&_nc_ohc=fphLnglOWp4AX92k61N&_nc_ht=scontent-iad3-1.xx&oh=a5fe95454900986f34f091155d4da343&oe=5E9D72E2");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
 }
+
+/* .header-image {
+  height: auto;
+  background: url("https://scontent-iad3-1.xx.fbcdn.net/v/t31.0-8/892485_10200905550149524_1630755182_o.jpg?_nc_cat=100&_nc_sid=05277f&_nc_ohc=fphLnglOWp4AX92k61N&_nc_ht=scontent-iad3-1.xx&oh=a5fe95454900986f34f091155d4da343&oe=5E9D72E2");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 400px;
+} */
 
 .top-nav-bar {
   display: flex;
   flex-direction: row;
   justify-content: center;
   background-color: black;
-  margin-top: 410px;
+  margin-top: 180px;
 }
 
 .perma-links {
@@ -115,7 +128,7 @@ body {
 
 .perma-links:hover {
   color: yellow;
-  background-color: red;
+  background-color: black;
   border: 4px solid yellow;
 }
 
@@ -137,7 +150,7 @@ body {
 
 .brewery-list-logo-link {
   margin-top: 30px;
-  border: 4px solid darkblue;
+  border: 4px solid black;
   border-radius: 8px;
   text-decoration: none;
 }
@@ -154,9 +167,11 @@ body {
 
 .brewery-detail-container {
   margin-top: 80px;
-  margin-left: 100px;
   background: url("https://images.unsplash.com/photo-1545287072-3c332a7acaf0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60")
-    repeat-y;
+    center repeat-y;
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .brewery-detail-brewery-container {
@@ -289,12 +304,13 @@ body {
 }
 
 .beer-lists-container {
-  margin-top: 160px;
+  margin-top: 60px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
   background: url("https://images.unsplash.com/photo-1559818454-1b46997bfe30?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60")
     center repeat-y;
+    max-width: 1000px;
 }
 
 .beer-list-brewery-name {
@@ -304,7 +320,7 @@ body {
   color: yellow;
   text-shadow: 2px 2px red;
   margin: 20px;
-  font-size: 36px;
+  font-size: 40px;
 }
 
 .beer-list-brewery-name:hover {
@@ -314,6 +330,7 @@ body {
 
 .beer-list-logo {
   display: flex;
+  margin-left: 60px;
 }
 
 .beer-list-link {
@@ -333,6 +350,13 @@ body {
   height: 80px;
   background-color: greenyellow;
   border: 4px solid black;
+
+  /* opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden; */
 }
 
 .beer-list-logo-link:hover {
@@ -359,6 +383,7 @@ body {
 .beer-detail-all-container {
   display: flex;
   flex-direction: column;
+
 }
 
 .beer-detail-container {
@@ -381,14 +406,23 @@ body {
 .beer-detail-images-container {
   display: flex;
   justify-content: space-between;
+  margin: 0 20%;
+}
+
+.beer-detail-logo-link {
+  border: 3px solid black;
+  background-color: yellow;
 }
 
 .beer-detail-logo-link:hover {
-  border: 4px solid red;
+  opacity: .8;
+  /* background-color: yellow; */
+  border: 3px solid red;
 }
 
 .beer-detail-beer-logo {
   height: 225px;
+  border: 3px solid black;
 }
 
 .beer-detail-info {
@@ -402,6 +436,7 @@ body {
   margin-top: 6px;
   margin-bottom: 6px;
   text-shadow: 2px 2px black;
+  font-size: 36px;
 }
 
 .beer-detail-stats {
@@ -411,6 +446,7 @@ body {
   margin-top: 6px;
   margin-bottom: 6px;
   text-shadow: 2px 2px black;
+  font-size: 28px;
 }
 
 .beer-detail-description {
@@ -419,56 +455,75 @@ body {
   text-align: center;
   margin-top: 6px;
   margin-bottom: 6px;
+  margin-left: auto;
+  margin-right: auto;
   text-shadow: 2px 2px black;
+  font-size: 28px;
+  width: 60%;
 }
 
 .food-list-container {
-  margin-top: 160px;
+  margin-top: 60px;
   margin-left: auto;
   margin-right: auto;
   /* background: url("https://images.unsplash.com/photo-1549396399-8a3275bc6bf8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60") repeat-y; */
   background: url("https://images.unsplash.com/photo-1533640924469-f04e06f8898d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60")
     center repeat-y;
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.food-list-logo {
+  margin-left: 80px;
 }
 
 .food-list-brewery {
   color: yellow;
+  text-shadow: 2px 2px red;
   text-decoration: none;
   background-color: rgba(0, 0, 0, 65%);
   margin-left: 20px;
-  font-size: 32px;
+  font-size: 36px;
 }
 
 .food-list-brewery:hover {
   color: red;
+  text-shadow: 2px 2px yellow;
 }
 
 .food-list-item {
-  color: yellow;
+  color: red;
+  text-shadow: 1px 1px yellow;
   background-color: rgba(0, 0, 0, 65%);
-  margin-left: 40px;
   font-size: 24px;
-  margin-left: 120px;
   text-decoration: none;
+  margin-left: 120px;
 }
 
 .food-list-item:hover {
-  color: red;
+  color: yellow;
+  text-shadow: 1px 1px red;
 }
 
 .food-list-description {
   color: black;
-  background-color: rgba(255, 255, 255, 65%);
-  width: 40%;
-  margin-left: 40px;
+  background-color: rgba(255, 255, 255, 75%);
+  width: 36%;
+  min-width: 400px;
+  margin-left: 120px;
   font-size: 18px;
   margin-bottom: 20px;
-  margin-left: 120px;
+  /* margin-left: auto;
+  margin-right: auto; */
 }
 
 .food-detail-container {
   background: url("https://images.unsplash.com/photo-1549396399-8a3275bc6bf8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60")
-    center repeat-y;
+    center no-repeat;
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .food-detail-logo {
@@ -507,6 +562,8 @@ body {
   text-shadow: 2px 2px red;
   margin-left: 60px;
   font-size: 36px;
+  background-color: rgba(0, 0, 0, 60%);
+
 }
 
 .food-detail-description {
@@ -516,6 +573,7 @@ body {
   font-size: 30px;
   border-radius: 6px;
   padding: 4px;
+  background-color: rgba(0, 0, 0, 60%);
 }
 
 .food-detail-options {
@@ -526,6 +584,7 @@ body {
   border-radius: 6px;
   width: 60%;
   padding: 4px;
+  background-color: rgba(0, 0, 0, 60%);
 }
 
 .food-detail-crud-buttons {

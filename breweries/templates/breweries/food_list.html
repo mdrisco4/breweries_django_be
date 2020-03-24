@@ -4,7 +4,7 @@
 <div class="food-list-container">
 {% for brewery in breweries %}
 
-<div class="beer-list-logo">
+<div class="food-list-logo">
   <!-- <h2><a href="/breweries/{{beer.brewery.id}}" class='beer-list-brewery-name'>{{ brewery.name }}</a></h2> -->
   <a href="/breweries/{{brewery.id}}"><img src="{{brewery.logo_url}}" alt="{{brewery.name}} logo"  class="beer-list-logo-link"/></a>
   <h2><a href="/breweries/{{brewery.id}}" class="food-list-brewery">{{ brewery.name }}</a></h2>

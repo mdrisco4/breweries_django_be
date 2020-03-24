@@ -5,12 +5,12 @@
   <div>
     <h4 class="beer-detail-id">{{ beer.name }}</h4>
     <h4 class="beer-detail-stats">Style: {{ beer.style }}</h4>
-    <h4 class="beer-detail-stats">ABV: {{ beer.abv }}</h4>
+    <h4 class="beer-detail-stats">ABV: {{ beer.abv }}%</h4>
     <h4 class="beer-detail-stats">IBUs: {{ beer.ibus }}</h4>
     <h4 class="beer-detail-stats">Served in: {{ beer.glassware }}</h4>
     <h4 class="beer-detail-stats">Full Pour: ${{ beer.full_price }}</h4>
     <h4 class="beer-detail-stats">Flight: ${{ beer.flight_price }}</h4>
-    <h4 class="beer-detail-description">Description: <br/>{{ beer.description }}</h4>
+    <h4 class="beer-detail-description">{{ beer.description }}</h4>
     <div class="beer-detail-images-container">
         <a href="/breweries/{{beer.brewery.id}}"
         ><img

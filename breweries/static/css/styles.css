@@ -223,17 +223,41 @@ body {
 .brewery-detail-beer-list-title {
   color: Red;
   text-shadow: 2px 2px black;
-  font-size: 40px;
+  font-size: 36px;
+}
+
+@media screen and (min-width: 550px) {
+  .brewery-detail-beer-list-title {
+    font-size: 45px;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .brewery-detail-beer-list-title {
+    font-size: 56px;
+  }
 }
 
 .brewery-detail-beer-name {
-  font-size: 28px;
+  font-size: 20px;
   color: crimson;
   padding: 4px;
   text-shadow: 1px 1px black;
   background-color: rgba(255, 255, 255, 75%);
   border: 2px solid crimson;
   text-decoration: none;
+}
+
+@media screen and (min-width: 550px) {
+  .brewery-detail-beer-name {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .brewery-detail-beer-name {
+    font-size: 36px;
+  }
 }
 
 .brewery-detail-beer-name:hover {
@@ -243,39 +267,87 @@ body {
 }
 
 .brewery-detail-beer-description {
-  width: 70%;
+  width: 90%;
   border: 2px solid red;
   color: black;
   /* text-shadow: 2px 1px crimson; */
   border-radius: 8px;
   padding: 4px;
   background-color: rgba(255, 255, 255, 75%);
-  font-size: 24px;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 550px) {
+  .brewery-detail-beer-description {
+    width: 80%;
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .brewery-detail-beer-description {
+    font-size: 36px;
+  }
 }
 
 .brewery-detail-beer-stats-container {
   border: 2px solid red;
   border-radius: 6px;
-  width: 15%;
+  width: 45%;
+}
+
+@media screen and (min-width: 550px) {
+  .brewery-detail-beer-stats-container {
+
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .brewery-detail-beer-stats-container {
+
+  }
 }
 
 .brewery-detail-beer-stats {
   margin: 0;
   padding: 4px;
   color: black;
-  /* text-shadow: 1px 1px crimson; */
   background-color: rgba(255, 255, 255, 75%);
   font-size: 20px;
+}
+
+@media screen and (min-width: 550px) {
+  .brewery-detail-beer-stats {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .brewery-detail-beer-stats {
+    font-size: 36px;
+  }
 }
 
 .brewery-detail-food-list-title {
   color: Red;
   text-shadow: 2px 2px black;
-  font-size: 40px;
+  font-size: 36px;
+}
+
+@media screen and (min-width: 550px) {
+  .brewery-detail-food-list-title {
+    font-size: 45px;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .brewery-detail-food-list-title {
+    font-size: 56px;
+  }
 }
 
 .brewery-detail-food-item {
-  font-size: 28px;
+  font-size: 20px;
   color: crimson;
   text-shadow: 2px 1px black;
   text-decoration: none;
@@ -285,6 +357,18 @@ body {
   border: 2px solid crimson;
 }
 
+@media screen and (min-width: 550px) {
+  .brewery-detail-food-item {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .brewery-detail-food-item {
+    font-size: 36px;
+  }
+}
+
 .brewery-detail-food-item:hover {
   color: black;
   text-shadow: 2px 1px crimson;
@@ -292,9 +376,21 @@ body {
 }
 
 .brewery-detail-food-price {
-  font-size: 32px;
+  font-size: 24px;
   color: yellow;
   text-shadow: 2px 1px black;
+}
+
+@media screen and (min-width: 550px) {
+  .brewery-detail-food-price {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .brewery-detail-food-price {
+    font-size: 36px;
+  }
 }
 
 .brewery-detail-food-description {
@@ -306,7 +402,19 @@ body {
   padding: 4px;
   margin-left: 30px;
   background-color: rgba(255, 255, 255, 75%);
-  font-size: 24px;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 550px) {
+  .brewery-detail-food-description {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .brewery-detail-food-description {
+    font-size: 36px;
+  }
 }
 
 .brewery-detail-crud-buttons {

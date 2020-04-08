@@ -433,6 +433,22 @@ body {
   border: 4px solid yellow;
 }
 
+.brewery-detail-delete {
+  color: red;
+  background-color: yellow;
+  border: 4px solid red;
+  width: 160px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.brewery-detail-delete:hover {
+  color: yellow;
+  background-color: red;
+  border: 4px solid yellow;
+}
+
 .brewery-detail-crud-buttons-text {
   color: red;
   text-decoration: none;
@@ -988,4 +1004,19 @@ body {
   color: red;
   background-color: white;
   width: 200px;
+}
+
+.brewery-form {
+  color: white;
+  text-align: center;
+}
+
+.beer-form {
+  color: white;
+  text-align: center;
+}
+
+.food-form {
+  color: white;
+  text-align: center;
 }

@@ -39,7 +39,7 @@
     <h3 class="brewery-detail-crud-buttons"><a href="/breweries/{{brewery.id}}/edit" class="brewery-detail-crud-buttons-text"> Edit {{brewery.name}} </a></h3>
     <form action="/breweries/{{brewery.id}}/delete">
         {% csrf_token %}
-        <input type="submit" value="Delete {{brewery.name}}">
+        <input type="submit" class="brewery-detail-delete" value="Delete {{brewery.name}}">
       </form>
   
     {% endblock %}

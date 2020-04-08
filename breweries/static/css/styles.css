@@ -196,6 +196,33 @@ body {
   text-decoration: none;
 }
 
+.brewery-list-crud-buttons {
+  color: red;
+  background-color: yellow;
+  border: 4px solid red;
+  width: 300px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+}
+
+.brewery-list-crud-buttons:hover {
+  color: yellow;
+  background-color: red;
+  border: 4px solid yellow;
+}
+
+.brewery-list-crud-buttons-text {
+  color: red;
+  text-decoration: none;
+}
+
+.brewery-list-crud-buttons-text:hover {
+  color: yellow;
+}
+
+
 .brewery-detail-container {
   margin-top: 80px;
   background: url("https://images.unsplash.com/photo-1545287072-3c332a7acaf0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60")
@@ -434,19 +461,20 @@ body {
 }
 
 .brewery-detail-delete {
-  color: red;
-  background-color: yellow;
-  border: 4px solid red;
-  width: 160px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.brewery-detail-delete:hover {
   color: yellow;
   background-color: red;
   border: 4px solid yellow;
+  width: 10%;
+  text-align: center;
+  display: inline-block;
+  margin-left: 45%;
+  margin-right: 45%;
+}
+
+.brewery-detail-delete:hover {
+  color: red;
+  background-color: yellow;
+  border: 4px solid red;
 }
 
 .brewery-detail-crud-buttons-text {
@@ -749,6 +777,49 @@ body {
   }
 }
 
+.beer-detail-crud-buttons {
+  color: red;
+  background-color: yellow;
+  border: 4px solid red;
+  width: 160px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.beer-detail-crud-buttons:hover {
+  color: yellow;
+  background-color: red;
+  border: 4px solid yellow;
+}
+
+.beer-detail-crud-buttons-text {
+  color: red;
+  text-decoration: none;
+  width: 160px;
+}
+
+.beer-detail-crud-buttons-text:hover {
+  color: yellow;
+}
+
+.beer-detail-delete {
+  color: yellow;
+  background-color: red;
+  border: 4px solid yellow;
+  width: 10%;
+  text-align: center;
+  display: inline-block;
+  margin-left: 45%;
+  margin-right: 45%;
+}
+
+.beer-detail-delete:hover {
+  color: red;
+  background-color: yellow;
+  border: 4px solid red;
+}
+
 .food-list-container {
   margin-top: 60px;
   margin-left: auto;
@@ -1004,6 +1075,37 @@ body {
   color: red;
   background-color: white;
   width: 200px;
+}
+
+.food-detail-delete {
+  color: yellow;
+  background-color: red;
+  border: 4px solid yellow;
+  width: 10%;
+  text-align: center;
+  display: inline-block;
+  margin-left: 45%;
+  margin-right: 45%;
+}
+
+.food-detail-delete:hover {
+  color: red;
+  background-color: yellow;
+  border: 4px solid red;
+}
+
+.food-detail-delete-text {
+  color: yellow;
+  background-color: red;
+  text-decoration: none;
+  border: none;
+  font-size: 20px;
+  width: 100%;
+}
+
+.food-detail-delete-text:hover {
+  color: red;
+  background-color: yellow;
 }
 
 .brewery-form {

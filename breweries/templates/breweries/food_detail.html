@@ -14,8 +14,8 @@
     <h4 class="food-detail-options">Options: {{ food.options }}</h4>
   </div>
     <h3 class="food-detail-crud-buttons"><a href="/food/{{food.id}}/edit" class="food-detail-crud-buttons-text"> Edit Item </a></h3>
-    <form class="delete-food" action="/food/{{food.id}}/delete">
+    <form class="food-detail-delete" action="/food/{{food.id}}/delete">
         {% csrf_token %}
-        <input class="delete-food-button" type="submit" value="Delete {{food.name}}">
+        <input class="food-detail-delete-text" type="submit" value="Delete {{food.name}}">
       </form>
   {% endblock %}

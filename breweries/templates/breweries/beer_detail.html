@@ -26,9 +26,9 @@
     </div>
   </div>
 </div>
-<a href="/beers/{{beer.id}}/edit"> Edit {{brewery.name}} </a>
+<h3 class="brewery-detail-crud-buttons"><a href="/beers/{{beer.id}}/edit"  class="brewery-detail-crud-buttons-text"> Edit {{brewery.name}} </a></h3>
 <form action="/beers/{{beer.id}}/delete">
   {% csrf_token %}
-  <input type="submit" value="Delete {{beer.name}}" />
+  <input type="submit" class="beer-detail-delete" value="Delete {{beer.name}}" />
 </form>
 {% endblock %}

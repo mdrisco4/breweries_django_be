@@ -927,6 +927,37 @@ body {
   }
 }
 
+.food-list-crud-buttons {
+  color: red;
+  background-color: yellow;
+  border: 4px solid red;
+  width: 180px;
+  height: auto;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.food-list-crud-buttons:hover {
+  color: yellow;
+  background-color: red;
+  border: 4px solid yellow;
+}
+
+.food-list-crud-buttons-text {
+  color: red;
+  background-color: yellow;
+  text-decoration: none;
+  border: none;
+  font-size: 20px;
+  width: 100%;
+}
+
+.food-list-crud-buttons-text:hover {
+  color: yellow;
+  background-color: red;
+}
+
 .food-detail-container {
   background: url("https://images.unsplash.com/photo-1549396399-8a3275bc6bf8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60")
     center no-repeat;
